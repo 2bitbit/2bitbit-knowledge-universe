@@ -143,6 +143,7 @@ D:\Notes
 │   ├── HPC/
 │   │   ├── CUDA/
 │   │   │   ├── -1CUDA C++与GPU.md
+│   │   │   ├── -2现代 GPU 计算栈：从上层框架到硬件执行的双路径架构（SIMT + Tile）.md
 │   │   │   ├── 00各种环境的搭建方案.md
 │   │   │   ├── 01CUDA入门.md
 │   │   │   ├── 02并行序列操作工具库--Thrust.md
@@ -390,6 +391,7 @@ D:\Notes
 │   │   │   ├── 三门问题.md
 │   │   │   └── 状态转移.md
 │   │   ├── -01粗略内容.md
+│   │   ├── -02符号体系.md
 │   │   ├── -100插值.md
 │   │   ├── -101环境和分布偏移.md
 │   │   ├── -102待整理.md
@@ -418,18 +420,16 @@ D:\Notes
 │   │   ├── 20样本和抽样分布.md
 │   │   └── 99测度.md
 │   ├── 抽象代数（入门）（散装）/
-│   │   ├── 01代数的语言与本质.md
+│   │   ├── 00抽象代数在研究什么.md
+│   │   ├── 01代数的语言.md
 │   │   ├── 02群论基础——对称性的公理化.md
 │   │   ├── 03结构间的桥梁——同态与同构.md
 │   │   ├── 04解构与重组——陪集、正规子群与商群.md
 │   │   ├── 05双运算系统——环论基础.md
 │   │   ├── 06环的结构分析——理想与商环.md
-│   │   ├── 07域论与方程——迈向伽罗瓦理论.md
-│   │   ├── 08拓展：格、模与范畴论.md
-│   │   ├── 09拓展：连续对称性——李群与李代数（拓扑代数）.md
-│   │   ├── 10拓展：计算视角的代数结构.md
-│   │   ├── 11拓展：代数几何的舞台——空间与线性代数.md
-│   │   └── 12拓展：空间结构与广义代数.md
+│   │   ├── 07域论基础——有限域.md
+│   │   ├── 08代数几何的舞台——从线性空间到希尔伯特空间.md
+│   │   └── 09拓展：计算视角的代数结构.md
 │   ├── λ演算（待整理）.md
 │   ├── 关于对数刻度.md
 │   ├── 同态、同构（待整理）.md
@@ -626,6 +626,15 @@ D:\Notes
 │   │   │   ├── RAII.md
 │   │   │   └── 优雅的语法.md
 │   │   ├── 第三方库/
+│   │   │   ├── Tauri/
+│   │   │   │   ├── 01前言.md
+│   │   │   │   ├── 02项目结构与主要文件的解读.md
+│   │   │   │   ├── 03基础知识.md
+│   │   │   │   ├── 04实战：ghost-typer（破解禁止粘贴）.md
+│   │   │   │   ├── 05实战：通用跨平台（含安卓）课表（但HNU专门优化版）.md
+│   │   │   │   ├── 06CICD之：Tauri 签名与自动更新.md
+│   │   │   │   ├── 07添加依赖.md
+│   │   │   │   └── 08美化UI.md
 │   │   │   ├── anyhow.md
 │   │   │   ├── async-trait.md
 │   │   │   ├── clap.md
@@ -634,7 +643,6 @@ D:\Notes
 │   │   │   ├── Rayon.md
 │   │   │   ├── serde.md
 │   │   │   ├── shellexpand.md
-│   │   │   ├── Tauri.md
 │   │   │   ├── tokio.md
 │   │   │   └── which & dunce.md
 │   │   ├── -1常见工程问题与Rust的解决方案.md
@@ -645,7 +653,7 @@ D:\Notes
 │   │   ├── 04函数.md
 │   │   ├── 05控制流.md
 │   │   ├── 06错误处理.md
-│   │   ├── 07crate.md
+│   │   ├── 07cargo与crate.md
 │   │   ├── 08struct.md
 │   │   ├── 09Trait.md
 │   │   ├── 10关键字.md
@@ -668,9 +676,11 @@ D:\Notes
 │   │   ├── 27文件系统.md
 │   │   ├── 28Rust for Python.md
 │   │   ├── 29SIMD与自动矢量化.md
-│   │   ├── 30通过命令行向编译器传递参数.md
+│   │   ├── 30向编译器传递参数.md
 │   │   ├── 31实战：在 Python 中用 Rust 进行数值计算.md
-│   │   └── 32输入与输出.md
+│   │   ├── 32输入与输出.md
+│   │   ├── 33Tauri实战：ghost-typer（破解禁止粘贴）.md
+│   │   └── 34与IDE协作.md
 │   └── TS/
 │       └── 00汇总.md
 ├── Android/
@@ -678,15 +688,23 @@ D:\Notes
 │   │   ├── 00官方文档永远是你爹.md
 │   │   ├── 01配置termux与proot-distro.md
 │   │   ├── 02配置AstrBot和Napcat.md
-│   │   ├── 03一键自动化部署.md
-│   │   └── 100待办：融入内网穿透.md
-│   ├── 100实战：使用 Rust 构建第一个 Android App (Hello World).md
-│   ├── 200正式发布.md
-│   └── 300proot-distro介绍.md
+│   │   └── 03一键自动化部署.md
+│   ├── 01环境搭建.md
+│   ├── 02实战：使用 Rust 构建第一个 Android App (Hello World).md
+│   ├── 03正式发布.md
+│   ├── 300proot-distro介绍.md
+│   ├── adb.md
+│   └── APK vs. AAB.md
 ├── blogs/
 │   └── Github工程师谈系统设计.md
 ├── CICD/
-│   └── GitHub Actions.md
+│   ├── GItHub Actions/
+│   │   ├── 01基本流程.md
+│   │   ├── 02基本概念.md
+│   │   ├── 03workflow 的基本配置字段.md
+│   │   ├── 04常用的Actions.md
+│   │   └── 05实战：VsCode插件自动发布.md
+│   └── CICD简介.md
 ├── compilers/
 │   ├── 00待整理.md
 │   ├── 01词法分析 (Lexical Analysis).md
@@ -873,6 +891,23 @@ D:\Notes
 │   ├── 06计算机网络.md
 │   ├── 07数据库与大数据.md
 │   └── 08机器学习.md
+├── Linux-Ops/
+│   ├── ssh安全/
+│   │   ├── 00防火墙.md
+│   │   ├── 01限制ssh登录次数--fail2ban.md
+│   │   └── 02利用ssh端口转发，零信任完成Web初始化.md
+│   ├── acme和acme.sh.md
+│   ├── curl.md
+│   ├── iperf3.md
+│   ├── NextTrace.md
+│   ├── ss.md
+│   ├── ssh.md
+│   ├── systemctl.md
+│   ├── ufw.md
+│   ├── VNC.md
+│   ├── wget.md
+│   ├── 各种top.md
+│   └── 排查网络问题.md
 ├── numerical-computation/
 │   ├── 100Kahan求和算法.md
 │   ├── 初步小汇总.md
@@ -968,6 +1003,7 @@ D:\Notes
 │   │   ├── 在容器里开发（待学完）.md
 │   │   └── 基础知识.md
 │   ├── Git/
+│   │   ├── Git Conventional Branches约定式分支.md
 │   │   ├── Git Conventional Commits约定式提交.md
 │   │   ├── Git.md
 │   │   ├── GitHub Pages.md
@@ -994,7 +1030,6 @@ D:\Notes
 │   ├── Markdown.md
 │   ├── Obsidian.md
 │   ├── Reqable.md
-│   ├── ssh.md
 │   ├── VMware.md
 │   ├── 命令行工具文档写法（命令签名语法解读）.md
 │   ├── 命令行，终端.md
@@ -1009,14 +1044,56 @@ D:\Notes
 │   │   ├── 02云端部署.md
 │   │   ├── 03Docker的应用.md
 │   │   └── 100一份大型项目的蓝图.md
+│   ├── caddy/
+│   │   ├── 01前言.md
+│   │   ├── 02权限配置与环境搭建.md
+│   │   ├── 03核心语法.md
+│   │   ├── 04路径问题专讲.md
+│   │   ├── 05Automatic HTTPS.md
+│   │   ├── 06常用命令与排错指南.md
+│   │   └── 07TLS链接下怎么改面板到指定url.md
 │   ├── 前端/
-│   │   ├── Next.js（未学）.md
-│   │   └── Tailwind（未学）.md
+│   │   └── Vue/
+│   │       ├── -1目录解读.md
+│   │       ├── 00总结.md
+│   │       ├── 01简介与环境搭建.md
+│   │       ├── 02核心结构.md
+│   │       ├── 03响应式系统.md
+│   │       ├── 04模板指令.md
+│   │       ├── 05组件通信.md
+│   │       ├── 06生命周期.md
+│   │       ├── 07侦听器.md
+│   │       ├── 08与IDE协作.md
+│   │       └── 09与Tauri v2协作.md
+│   ├── 实战：VPS 全栈部署手册（自建中转+web服务混合体）/
+│   │   ├── 00术语及其关系的解释.md
+│   │   ├── 01基础设施采购.md
+│   │   ├── 02远程连接与初始化.md
+│   │   ├── 03协议的选型.md
+│   │   ├── 04服务器用Xray部署Vless（TLS+Vision）.md
+│   │   ├── 06客户端配置.md
+│   │   ├── 07配置Caddy.md
+│   │   ├── 08证书管理.md
+│   │   ├── 09当前架构数据包流向分析.md
+│   │   ├── 100开启BBR.md
+│   │   ├── CDN.md
+│   │   ├── CIDR记法.md
+│   │   ├── clash家族的配置教程.md
+│   │   ├── cloudflare warp烂IP逆天改命.md
+│   │   ├── GFW相关.md
+│   │   ├── KVM.md
+│   │   ├── QoS限制，Hysteria2被限速的原因分析.md
+│   │   ├── Vless协议.md
+│   │   ├── Xray.md
+│   │   ├── 协议对比.md
+│   │   └── 线路相关.md
 │   ├── Cloudflare.md
 │   ├── CORS.md
 │   ├── CSS.md
+│   ├── DoH、DoT.md
 │   ├── HTML.md
 │   ├── HTTP.md
+│   ├── HTTPS和SSL或TLS.md
 │   ├── ip.md
 │   ├── MathJax.md
 │   ├── Nginx.md
@@ -1027,21 +1104,26 @@ D:\Notes
 │   ├── 代理.md
 │   ├── 内网穿透(如果没有ipv6的话)&自搭建公网入口实战.md
 │   ├── 协议基础.md
+│   ├── 反向代理中的“路径错位”难题.md
 │   ├── 域名.md
 │   ├── 基础设计知识.md
 │   ├── 备案.md
+│   ├── 套接字.md
 │   ├── 如何分析本机复杂的网络环境.md
+│   ├── 安全地访问面板.md
 │   ├── 局域网互联.md
-│   ├── 日一声手搓Mini服务器.md
+│   ├── 日一声手搓内网穿透Mini服务器.md
 │   ├── 本地环回.md
 │   ├── 框架选择待定夺.md
 │   ├── 端口.md
-│   └── 网络层模型.md
+│   ├── 网络层模型.md
+│   └── 零信任架构.md
 ├── 从面经中学到的/
 │   └── 操作系统.md
 ├── 其他backup/
 │   ├── Bookmarks_2025-11-25.md
-│   └── Bookmarks_2025-12-05.md
+│   ├── Bookmarks_2025-12-05.md
+│   └── Bookmarks_2025-12-16.md
 ├── 湖大生活hnu/
 │   ├── 保研.md
 │   ├── 培养方案.md
@@ -1051,7 +1133,6 @@ D:\Notes
 │   ├── 留学宣讲会笔记.md
 │   ├── 选课 Course-Choosing.md
 │   └── 预备选课.md
-├── 王道408/
 ├── Gemini指令集.md
 ├── 保研指南.md
 ├── 反直觉的悖论（没学会）.md
