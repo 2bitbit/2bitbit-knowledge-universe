@@ -13,15 +13,20 @@ D:\Notes
 │   │   ├── 许可证.md
 │   │   ├── 设计模式.md
 │   │   └── 风格指南.md
+│   ├── 神药汇聚/
+│   │   ├── 扶他林.md
+│   │   └── 爽身粉.md
 │   ├── asking_exp.md
 │   ├── English_exp.md
 │   ├── Experience.md
 │   ├── Win版本更换.md
+│   ├── 买鞋经验.md
 │   ├── 互传文件.md
 │   ├── 人际交往.md
 │   ├── 健康health与医疗.md
 │   ├── 哲学 philosophy.md
 │   ├── 学习.md
+│   ├── 形象管理.md
 │   ├── 湘雅就医历史记录.md
 │   ├── 电动车.md
 │   └── 阅读.md
@@ -114,7 +119,11 @@ D:\Notes
 │   │   │   │   ├── 03概率.md
 │   │   │   │   ├── 04自动微分与计算图.md
 │   │   │   │   ├── 05CUDA.md
-│   │   │   │   └── 06搭建模型.md
+│   │   │   │   ├── 06搭建模型.md
+│   │   │   │   ├── 07torchrun.md
+│   │   │   │   ├── 08warmup.md
+│   │   │   │   ├── 09stream.md
+│   │   │   │   └── 10锁页内存.md
 │   │   │   ├── cupy.md
 │   │   │   ├── einops.md
 │   │   │   ├── jaxtyping.md
@@ -143,6 +152,10 @@ D:\Notes
 │   │   └── 14规范化技术概览.md
 │   ├── HPC/
 │   │   ├── CUDA/
+│   │   │   ├── Nsight/
+│   │   │   │   ├── 01简介.md
+│   │   │   │   ├── 02生成报告.md
+│   │   │   │   └── 03如何看图.md
 │   │   │   ├── -1CUDA C++与GPU.md
 │   │   │   ├── -2现代 GPU 计算栈：从上层框架到硬件执行的双路径架构（SIMT + Tile）.md
 │   │   │   ├── 00各种环境的搭建方案.md
@@ -205,8 +218,7 @@ D:\Notes
 │   │   └── Stable Diffusion web UI.md
 │   ├── Lora/
 │   │   ├── 01Lora原理.md
-│   │   ├── 02手搓Lora.md
-│   │   └── 03调包Lora.md
+│   │   └── 02手搓Lora.md
 │   ├── medicine/
 │   │   └── 梅尔频谱图.md
 │   ├── ML/
@@ -261,17 +273,27 @@ D:\Notes
 │   │   ├── On-Policy 和Off-Policy.md
 │   │   ├── PPO.md
 │   │   └── 策略梯度PG.md
-│   └── （未看，gemini3生成）distributed-system/
-│       ├── -1传统分布式理论速成.md
-│       ├── 00Roadmap.md
-│       ├── 01.md
-│       ├── 02.md
-│       ├── 03.md
-│       ├── 04.md
-│       ├── 05.md
-│       ├── 06.md
-│       ├── 07.md
-│       └── Gossip协议.md
+│   ├── zeroclaw的应用/
+│   │   ├── 01什么是zeroclaw.md
+│   │   └── 01起步：在 Windows 本地搭建 QQ AI 助手.md
+│   ├── 计算性能（动手学深度学习的一章）/
+│   │   ├── 01编译器和解释器.md
+│   │   ├── 02异步计算.md
+│   │   ├── 03自动并行.md
+│   │   └── 04硬件.md
+│   ├── （未看，gemini3生成）distributed-system/
+│   │   ├── -1传统分布式理论速成.md
+│   │   ├── 00Roadmap.md
+│   │   ├── 01.md
+│   │   ├── 02.md
+│   │   ├── 03.md
+│   │   ├── 04.md
+│   │   ├── 05.md
+│   │   ├── 06.md
+│   │   ├── 07.md
+│   │   └── Gossip协议.md
+│   ├── AutoDL云显卡指南.md
+│   └── 贪心搜索，穷举搜索，束搜索.md
 ├── 02math/
 │   ├── calculus/
 │   │   ├── 上册/
@@ -416,7 +438,7 @@ D:\Notes
 │   │   ├── 02概率及其运算性质.md
 │   │   ├── 03条件概率.md
 │   │   ├── 04Independence of Events.md
-│   │   ├── 05Random Variables.md
+│   │   ├── 05Random Variables随机变量.md
 │   │   ├── 06离散型随机变量与分布律.md
 │   │   ├── 07连续型随机变量与概率密度.md
 │   │   ├── 08分布函数.md
@@ -424,6 +446,7 @@ D:\Notes
 │   │   ├── 100概率分布族与变换不变性.md
 │   │   ├── 101有趣的概率论问题.md
 │   │   ├── 102有偏分布.md
+│   │   ├── 103收敛专题.md
 │   │   ├── 10二维随机变量.md
 │   │   ├── 11边缘分布.md
 │   │   ├── 12随机变量的独立性.md
@@ -439,6 +462,7 @@ D:\Notes
 │   │   ├── 22估计量的评价标准.md
 │   │   ├── 23区间估计.md
 │   │   ├── 24假设检验.md
+│   │   ├── 25一体两面：区间估计与假设检验.md
 │   │   └── 99测度.md
 │   ├── 抽象代数入门（还没看！ ！）（散装）/
 │   │   ├── -1脑中模型.md
@@ -469,6 +493,10 @@ D:\Notes
 │   │   │   ├── 00CMake杂谈.md
 │   │   │   ├── 01CMake用法.md
 │   │   │   └── vcpkg.md
+│   │   ├── gdb/
+│   │   │   ├── 01语法.md
+│   │   │   ├── 02挂载到进程.md
+│   │   │   └── 03TUI.md
 │   │   ├── ui/
 │   │   │   └── Qt/
 │   │   │       └── 00模块介绍.md
@@ -490,7 +518,6 @@ D:\Notes
 │   │   ├── 15Py转译为Cpp.md
 │   │   ├── 16预处理指令.md
 │   │   ├── 17别名.md
-│   │   ├── 18gdb大佬.md
 │   │   ├── 19g++.md
 │   │   ├── 20编译器优化.md
 │   │   ├── 21define宏的正确用法.md
@@ -740,6 +767,28 @@ D:\Notes
 │   │   ├── JSON.md
 │   │   ├── toml.md
 │   │   └── yaml.md
+│   ├── 汇编/
+│   │   ├── AT&T/
+│   │   │   ├── 00别把AT&T当成gdb，别把gdb当成AT&T.md
+│   │   │   ├── 01前言.md
+│   │   │   ├── 02语法.md
+│   │   │   ├── 03伪指令.md
+│   │   │   ├── 0432位和64位的基本模板.md
+│   │   │   ├── 05内存覆盖.md
+│   │   │   └── 05和NASM的一些对比.md
+│   │   ├── NASM/
+│   │   │   ├── 00手搓一个最简单的操作系统引导程序（BIOS固件）.md
+│   │   │   ├── 00简单的 NASM 程序.md
+│   │   │   ├── 01CPU运行模式.md
+│   │   │   ├── 02标签.md
+│   │   │   ├── 03中断.md
+│   │   │   ├── 04常见基础指令速查.md
+│   │   │   ├── 05段.md
+│   │   │   ├── 06Ring.md
+│   │   │   ├── 07寄存器.md
+│   │   │   └── 08伪指令.md
+│   │   ├── 解读x86指令执行.md
+│   │   └── 解读x86架构的寄存器.md
 │   ├── Glob.md
 │   ├── Latex.md
 │   ├── Markdown.md
@@ -1054,6 +1103,7 @@ D:\Notes
 │   ├── curl.md
 │   ├── iperf3.md
 │   ├── journalctl.md
+│   ├── micro.md
 │   ├── NextTrace.md
 │   ├── ss.md
 │   ├── ssh.md
@@ -1061,8 +1111,43 @@ D:\Notes
 │   ├── ufw.md
 │   ├── VNC.md
 │   ├── wget.md
+│   ├── Zellij 终端复用器.md
 │   ├── 各种top.md
 │   └── 排查网络问题.md
+├── OS/
+│   ├── Android/
+│   │   ├── 实战：安卓机爆改AstrBot的QQ服务器/
+│   │   │   ├── 00官方文档永远是你爹.md
+│   │   │   ├── 01配置termux与proot-distro.md
+│   │   │   ├── 02配置AstrBot和Napcat.md
+│   │   │   └── 03一键自动化部署.md
+│   │   ├── 实战：破解mumu模拟器/
+│   │   │   └── 01破解方案.md
+│   │   ├── 01环境搭建.md
+│   │   ├── 02实战：使用 Rust 构建第一个 Android App (Hello World).md
+│   │   ├── 03正式release发布.md
+│   │   ├── 04连接实机（真机你太美）.md
+│   │   ├── 300proot-distro介绍.md
+│   │   ├── adb.md
+│   │   └── APK vs. AAB.md
+│   ├── Linux（版本之子是wsl）/
+│   │   ├── Fedora.md
+│   │   ├── Linux 内核哈希函数：黄金比例的数学奥秘.md
+│   │   ├── Linux.md
+│   │   ├── Linux美化.md
+│   │   ├── Linux自动化.md
+│   │   ├── Ubuntu、Debian.md
+│   │   ├── WSL2 复杂网络环境排错（含与VSCode交互的网络排错）.md
+│   │   ├── zsh.md
+│   │   ├── zsh实战：wsl下conda-vscode启动器.md
+│   │   ├── 实用工具命令.md
+│   │   ├── 服务器参数查询.md
+│   │   └── 符号链接.md
+│   └── Windows/
+│       ├── powershell.md
+│       ├── windows.md
+│       ├── wsl.md
+│       └── 驱动安装教程.md
 ├── reverse-engineering/
 │   ├── -1ida常用快捷键.md
 │   ├── -2软件选型.md
@@ -1082,35 +1167,19 @@ D:\Notes
 │   ├── VMware.md
 │   └── 关于Gif录制.md
 ├── system/
-│   ├── Android/
-│   │   ├── 实战：安卓机爆改AstrBot的QQ服务器/
-│   │   │   ├── 00官方文档永远是你爹.md
-│   │   │   ├── 01配置termux与proot-distro.md
-│   │   │   ├── 02配置AstrBot和Napcat.md
-│   │   │   └── 03一键自动化部署.md
-│   │   ├── 01环境搭建.md
-│   │   ├── 02实战：使用 Rust 构建第一个 Android App (Hello World).md
-│   │   ├── 03正式release发布.md
-│   │   ├── 04连接实机（真机你太美）.md
-│   │   ├── 300proot-distro介绍.md
-│   │   ├── adb.md
-│   │   └── APK vs. AAB.md
 │   ├── Conda一家子/
 │   │   ├── Conda与Mamba.md
 │   │   └── Miniforge（轻松配置Mamba）.md
-│   ├── Linux（版本之子是wsl）/
-│   │   ├── Fedora.md
-│   │   ├── Linux 内核哈希函数：黄金比例的数学奥秘.md
-│   │   ├── Linux.md
-│   │   ├── Linux美化.md
-│   │   ├── Linux自动化.md
-│   │   ├── Ubuntu、Debian.md
-│   │   ├── WSL2 复杂网络环境排错（含与VSCode交互的网络排错）.md
-│   │   ├── zsh.md
-│   │   ├── zsh实战：wsl下conda-vscode启动器.md
-│   │   ├── 实用工具命令.md
-│   │   ├── 服务器参数查询.md
-│   │   └── 符号链接.md
+│   ├── GNU binutils/
+│   │   ├── 01前言.md
+│   │   └── 02入门.md
+│   ├── HNU-计算机系统/
+│   │   ├── 01前言.md
+│   │   ├── 02信息的机器级表达.md
+│   │   ├── 03hello world的诞生.md
+│   │   ├── 04汇编初步.md
+│   │   ├── 05.md
+│   │   └── 浮点数的表示.md
 │   ├── shell专题/
 │   │   ├── 01进程模型与命令执行流程.md
 │   │   ├── 02环境变量与继承.md
@@ -1122,19 +1191,17 @@ D:\Notes
 │   │   ├── 08交互式与非交互式.md
 │   │   ├── 09conda(mamba)和proot-distro的原理.md
 │   │   ├── 100彩色字体.md
+│   │   ├── 10任务控制.md
 │   │   ├── 200选项解析终止符.md
-│   │   └── 300杂项.md
-│   ├── Windows/
-│   │   ├── powershell.md
-│   │   ├── windows.md
-│   │   ├── wsl.md
-│   │   └── 驱动安装教程.md
+│   │   ├── 300杂项.md
+│   │   └── 拓展：Command Wrapping.md
 │   ├── 00实战应用.md
 │   ├── ANSI 转义序列.md
 │   ├── Bootloader.md
 │   ├── cs.md
 │   ├── DRAM读取数据的物理过程.md
 │   ├── 内存.md
+│   ├── 内存对齐.md
 │   ├── 双系统与系统迁移.md
 │   ├── 并发与同步.md
 │   ├── 查找机制（环境问题指南）.md
@@ -1280,20 +1347,24 @@ D:\Notes
 │   │       ├── 大物下一本通.md
 │   │       ├── 大物下佛脚--电.md
 │   │       ├── 大物下佛脚--磁.md
+│   │       ├── 大物下能量专题.md
 │   │       └── 课外：定性与半定量物理学.md
 │   ├── 其他backup/
 │   │   ├── Bookmarks_2025-12-31.md
 │   │   ├── Bookmarks_2026-01-01.md
-│   │   └── Bookmarks_2026-01-14.md
-│   └── 湖大生活hnu/
-│       ├── 保研.md
-│       ├── 培养方案.md
-│       ├── 校园网.md
-│       ├── 班主任箴言.md
-│       ├── 班会.md
-│       ├── 留学宣讲会笔记.md
-│       ├── 选课 Course-Choosing.md
-│       └── 预备选课.md
+│   │   ├── Bookmarks_2026-01-14.md
+│   │   └── Bookmarks_2026-03-11.md
+│   ├── 湖大生活hnu/
+│   │   ├── 保研.md
+│   │   ├── 培养方案.md
+│   │   ├── 校园网.md
+│   │   ├── 班主任箴言.md
+│   │   ├── 班会.md
+│   │   ├── 留学宣讲会笔记.md
+│   │   ├── 选课 Course-Choosing.md
+│   │   └── 预备选课.md
+│   ├── cheat engine.md
+│   └── 王者荣耀一个人玩五个号.md
 ├── Gemini指令集.md
 ├── 保研指南.md
 ├── 反直觉的悖论（没学会）.md
