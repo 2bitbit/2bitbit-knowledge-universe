@@ -77,6 +77,8 @@ D:\Notes
 │   │   ├── 01四元数.md
 │   │   ├── Codec、FOURCC、容器、视频压缩标准.md
 │   │   └── 矩阵的旋转.md
+│   ├── data/
+│   │   └── polars.md
 │   ├── diffusion/
 │   │   └── 01从噪声中重构秩序：扩散模型（Diffusion Models）原理解读.md
 │   ├── DL/
@@ -150,6 +152,10 @@ D:\Notes
 │   │   ├── 12循环神经网络RNN.md
 │   │   ├── 13现代RNN.md
 │   │   └── 14规范化技术概览.md
+│   ├── GGUF/
+│   │   ├── 01.md
+│   │   ├── 02.md
+│   │   └── 03.md
 │   ├── HPC/
 │   │   ├── CUDA/
 │   │   │   ├── Nsight/
@@ -213,6 +219,22 @@ D:\Notes
 │   │   ├── PEFT技术与peft库.md
 │   │   ├── safetensors（未学）.md
 │   │   └── transformers.md
+│   ├── IR（Information Retrieval）/
+│   │   ├── Dense Retrieval（Vector Search）/
+│   │   │   └── ANN/
+│   │   │       ├── 00什么是ANN.md
+│   │   │       ├── 01HNSW数学原理.md
+│   │   │       └── 02手搓HNSW示例代码.md
+│   │   ├── Sparse Retrieval/
+│   │   │   ├── Data Structures/
+│   │   │   │   └── 01Inverted Index.md
+│   │   │   └── Term Weighting/
+│   │   │       ├── 00什么是Term Weighting.md
+│   │   │       ├── 01TF-IDF.md
+│   │   │       ├── 02BM25.md
+│   │   │       └── 03TF-IDF和BM25的同与不同.md
+│   │   ├── 00信息检索（IR）导论：从稀疏匹配到稠密向量与 RAG 架构.md
+│   │   └── 01三种检索方式.md
 │   ├── local_AI/
 │   │   ├── Ollama.md
 │   │   └── Stable Diffusion web UI.md
@@ -225,8 +247,6 @@ D:\Notes
 │   │   ├── 00.md
 │   │   ├── 杂谈.md
 │   │   └── 附录.md
-│   ├── nanochat/
-│   │   └── 学什么.md
 │   ├── NLP/
 │   ├── NPU/
 │   │   ├── GEMM/
@@ -241,6 +261,11 @@ D:\Notes
 │   │   ├── 100Kahan求和算法.md
 │   │   ├── 初步小汇总.md
 │   │   └── 浮点数.md
+│   ├── ONNX/
+│   │   ├── 01.md
+│   │   ├── 02.md
+│   │   ├── 03.md
+│   │   └── 04.md
 │   ├── RL/
 │   │   ├── DRL/
 │   │   │   ├── 01DQN.md
@@ -276,6 +301,12 @@ D:\Notes
 │   ├── zeroclaw的应用/
 │   │   ├── 01什么是zeroclaw.md
 │   │   └── 01起步：在 Windows 本地搭建 QQ AI 助手.md
+│   ├── 线性代数应用的精讲/
+│   │   ├── 01协方差矩阵、投影方差与信息量.md
+│   │   ├── 02特征向量：稳定与独立之美.md
+│   │   ├── 03奇异值分解：绕过协方差矩阵，来求协方差矩阵的特征向量和特征值.md
+│   │   ├── 04奇异值：单位圆拉伸成椭圆.md
+│   │   └── 05条件数：数值稳定的判官.md
 │   ├── 计算性能（动手学深度学习的一章）/
 │   │   ├── 01编译器和解释器.md
 │   │   ├── 02异步计算.md
@@ -293,6 +324,7 @@ D:\Notes
 │   │   ├── 07.md
 │   │   └── Gossip协议.md
 │   ├── AutoDL云显卡指南.md
+│   ├── ChatML.md
 │   └── 贪心搜索，穷举搜索，束搜索.md
 ├── 02math/
 │   ├── calculus/
@@ -636,6 +668,8 @@ D:\Notes
 │   │   │   ├── watchfiles.md
 │   │   │   ├── webbrowser.md
 │   │   │   └── ydata-profiling.md
+│   │   ├── uv的学问/
+│   │   │   └── 01uv.md
 │   │   ├── 01数据类型.md
 │   │   ├── 02语法.md
 │   │   ├── 03控制流语句与异常处理.md
@@ -662,13 +696,26 @@ D:\Notes
 │   │   ├── 24面向接口编程.md
 │   │   ├── 25IO性能优化.md
 │   │   ├── 26与IDE协作.md
-│   │   ├── 27uv.md
-│   │   └── WSGI、ASGI.md
+│   │   ├── Rust的享受：python.analysis.inlayHints.md
+│   │   └── WSGI、ASGI简介.md
 │   ├── Rust/
+│   │   ├── 000Rust复习知识总结/
+│   │   │   ├── 01内存模型与所有权基石.md
+│   │   │   ├── 02类型系统与多态抽象.md
+│   │   │   ├── 03系统并发与异步运行时.md
+│   │   │   ├── 04底层控制、元编程与工程化.md
+│   │   │   └── 05基本第三方库的基本用法.md
 │   │   ├── 二进制可执行工具/
 │   │   │   ├── 00简介.md
 │   │   │   ├── cargo-binstall.md
 │   │   │   └── sccache加速编译.md
+│   │   ├── 实战：Latex-OCR/
+│   │   │   ├── 01内存与数据表示.md
+│   │   │   ├── 02操作系统 API 与系统调用.md
+│   │   │   ├── 03并发与多线程.md
+│   │   │   ├── 04底层图形基础与渲染机制.md
+│   │   │   ├── 05外部设备与硬件交互.md
+│   │   │   └── 第三方库：xcap和minifb.md
 │   │   ├── 标准库/
 │   │   │   ├── 00预导入prelude.md
 │   │   │   ├── cmp.md
@@ -701,9 +748,11 @@ D:\Notes
 │   │   │   │   └── 12IPC.md
 │   │   │   ├── anyhow.md
 │   │   │   ├── async-trait.md
+│   │   │   ├── candle.md
 │   │   │   ├── clap.md
 │   │   │   ├── crossterm & ratatui.md
 │   │   │   ├── dirs.md
+│   │   │   ├── hf_hub.md
 │   │   │   ├── Rayon.md
 │   │   │   ├── serde.md
 │   │   │   ├── shellexpand.md
@@ -720,6 +769,7 @@ D:\Notes
 │   │   ├── 07cargo与crate.md
 │   │   ├── 08struct.md
 │   │   ├── 09Trait.md
+│   │   ├── 100一些命名规范.md
 │   │   ├── 10关键字.md
 │   │   ├── 11编译.md
 │   │   ├── 12语法糖.md
@@ -744,7 +794,12 @@ D:\Notes
 │   │   ├── 31实战：在 Python 中用 Rust 进行数值计算.md
 │   │   ├── 32输入与输出.md
 │   │   ├── 33Tauri实战：ghost-typer（破解禁止粘贴）.md
-│   │   └── 34与IDE协作.md
+│   │   ├── 34与IDE协作.md
+│   │   ├── 35extern.md
+│   │   ├── 36原子操作和内存顺序.md
+│   │   ├── 37解引用(✳)专题：复制、移动与智能指针.md
+│   │   ├── Scope.md
+│   │   └── 拓展：柯里化.md
 │   ├── SystemVerilog (SV)/
 │   │   ├── 01前言.md
 │   │   ├── 02思维转变&命名规范&最佳实践.md
@@ -763,6 +818,25 @@ D:\Notes
 │   ├── Verilog/
 │   │   ├── -1附：如何从SV转向Verilog.md
 │   │   └── Verilog 实战：从零到“点亮 LED”.md
+│   ├── Windows编程/
+│   │   ├── windows crate/
+│   │   │   ├── 01.md
+│   │   │   ├── 02.md
+│   │   │   ├── 03.md
+│   │   │   └── 04.md
+│   │   ├── -1破解windows命名.md
+│   │   ├── 01入门.md
+│   │   ├── 02explorer资源管理器的双面角色.md
+│   │   ├── 03消息循环细讲.md
+│   │   ├── 04一个窗口过程的例子.md
+│   │   ├── 05DPI虚拟化.md
+│   │   ├── 06Win32 API 接管窗口外观与焦点.md
+│   │   ├── 07虚拟内存导致内存隔离、句柄是IPC桥梁.md
+│   │   ├── 08剪贴板.md
+│   │   ├── 09快捷键的一个坑.md
+│   │   ├── 100实战：LatexOCR.md
+│   │   ├── 10Visual Studio Installer的地位（Windows C++ 编译环境架构解析：物理隔离与动态查询机制）.md
+│   │   └── 11一些windows窗口选项的说明.md
 │   ├── 序列化语言/
 │   │   ├── JSON.md
 │   │   ├── toml.md
@@ -772,10 +846,11 @@ D:\Notes
 │   │   │   ├── 00别把AT&T当成gdb，别把gdb当成AT&T.md
 │   │   │   ├── 01前言.md
 │   │   │   ├── 02语法.md
-│   │   │   ├── 03伪指令.md
+│   │   │   ├── 03标签和伪指令.md
 │   │   │   ├── 0432位和64位的基本模板.md
 │   │   │   ├── 05内存覆盖.md
-│   │   │   └── 05和NASM的一些对比.md
+│   │   │   ├── 05和NASM的一些对比.md
+│   │   │   └── 06指令讲解.md
 │   │   ├── NASM/
 │   │   │   ├── 00手搓一个最简单的操作系统引导程序（BIOS固件）.md
 │   │   │   ├── 00简单的 NASM 程序.md
@@ -888,7 +963,10 @@ D:\Notes
 │   │   ├── 07树.md
 │   │   ├── 07红黑树.md
 │   │   ├── 08堆.md
-│   │   └── 09图.md
+│   │   ├── 09图.md
+│   │   ├── 10树状数组.md
+│   │   ├── 11稀疏矩阵存储之CSC.md
+│   │   └── 12块状链表.md
 │   ├── 王道408数据结构/
 │   │   ├── 00数据结构核心.md
 │   │   ├── 01数据结构相关概念.md
@@ -948,6 +1026,8 @@ D:\Notes
 │       ├── tasks.json.md
 │       ├── Vscode相关小知识汇总.md
 │       └── 文档注释.md
+├── Excalidraw/
+│   └── Drawing 2026-03-21 21.38.09.excalidraw.md
 ├── hack/
 ├── hardware/
 │   ├── cybernetics/
@@ -1152,6 +1232,7 @@ D:\Notes
 │   ├── -1ida常用快捷键.md
 │   ├── -2软件选型.md
 │   ├── 00hello_world静态分析.md
+│   ├── 010 Editor的使用指南.md
 │   ├── 01hello_world动态调试.md
 │   ├── 02找入口点专讲.md
 │   ├── 03字.md
@@ -1174,12 +1255,22 @@ D:\Notes
 │   │   ├── 01前言.md
 │   │   └── 02入门.md
 │   ├── HNU-计算机系统/
+│   │   ├── 有趣的实验/
+│   │   │   ├── 01浮点数精度问题.md
+│   │   │   └── 02浮点转整数但溢出的相关知识.md
+│   │   ├── -1循环展开--所有章节的一个综合应用.md
 │   │   ├── 01前言.md
 │   │   ├── 02信息的机器级表达.md
 │   │   ├── 03hello world的诞生.md
-│   │   ├── 04汇编初步.md
-│   │   ├── 05.md
-│   │   └── 浮点数的表示.md
+│   │   ├── 04汇编初步与进阶.md
+│   │   ├── 05整数.md
+│   │   ├── 06浮点数.md
+│   │   ├── 07栈.md
+│   │   ├── 101linux汇编程序示例精讲.md
+│   │   ├── 102函数调用与流水线.md
+│   │   ├── 103（还没看）.md
+│   │   ├── stack_demo.html
+│   │   └── ？？？浮点数的表示.md
 │   ├── shell专题/
 │   │   ├── 01进程模型与命令执行流程.md
 │   │   ├── 02环境变量与继承.md
@@ -1195,14 +1286,20 @@ D:\Notes
 │   │   ├── 200选项解析终止符.md
 │   │   ├── 300杂项.md
 │   │   └── 拓展：Command Wrapping.md
+│   ├── 内存对齐/
+│   │   ├── 01内存对齐.md
+│   │   └── 02内存对齐与原子操作：跨缓存行难以实现原子操作.md
+│   ├── 缓存/
+│   │   ├── 01跨缓存行难以实现原子操作.md
+│   │   └── 02伪共享：用缓存行隔离或线程本地存储解决.md
 │   ├── 00实战应用.md
 │   ├── ANSI 转义序列.md
 │   ├── Bootloader.md
 │   ├── cs.md
 │   ├── DRAM读取数据的物理过程.md
 │   ├── 内存.md
-│   ├── 内存对齐.md
 │   ├── 双系统与系统迁移.md
+│   ├── 同步硬件异常.md
 │   ├── 并发与同步.md
 │   ├── 查找机制（环境问题指南）.md
 │   ├── 汇编语言简介.md
@@ -1312,6 +1409,10 @@ D:\Notes
 │   ├── 局域网互联.md
 │   ├── 手机流量加速（似乎有效果）.md
 │   └── 端口.md
+├── 一些协议与格式/
+│   └── zip.md
+├── 奇技淫巧/
+│   └── 隐写术之：躲猫猫的zip.md
 ├── 没用的CS/
 │   └── introduction-to-computer-science/
 │       ├── 01计算与计算思维.md
@@ -1322,6 +1423,11 @@ D:\Notes
 │       ├── 06计算机网络.md
 │       ├── 07数据库与大数据.md
 │       └── 08机器学习.md
+├── 网络编程/
+│   └── 流：内存复用.md
+├── 隐藏起来不让看/
+│   ├── 保研指南.md
+│   └── 张子兴（等你动手学看完了再去）.md
 ├── 非CS/
 │   ├── how-to-make-presentation/
 │   │   ├── 演讲稿_cn（仅作参考，与英文版有巨大出入，以英文为准）.md
@@ -1350,10 +1456,8 @@ D:\Notes
 │   │       ├── 大物下能量专题.md
 │   │       └── 课外：定性与半定量物理学.md
 │   ├── 其他backup/
-│   │   ├── Bookmarks_2025-12-31.md
-│   │   ├── Bookmarks_2026-01-01.md
-│   │   ├── Bookmarks_2026-01-14.md
-│   │   └── Bookmarks_2026-03-11.md
+│   │   ├── Bookmarks_2026-03-11.md
+│   │   └── Bookmarks_2026-04-02.md
 │   ├── 湖大生活hnu/
 │   │   ├── 保研.md
 │   │   ├── 培养方案.md
@@ -1363,10 +1467,13 @@ D:\Notes
 │   │   ├── 留学宣讲会笔记.md
 │   │   ├── 选课 Course-Choosing.md
 │   │   └── 预备选课.md
+│   ├── antigravity迁移指南.md
 │   ├── cheat engine.md
-│   └── 王者荣耀一个人玩五个号.md
-├── Gemini指令集.md
-├── 保研指南.md
-├── 反直觉的悖论（没学会）.md
-└── 张子兴（等你动手学看完了再去）.md
+│   ├── typst.md
+│   ├── 万能的淘宝.md
+│   ├── 王者荣耀一个人玩五个号.md
+│   └── 解决某些应用登陆后不会跳转的问题（如antigravity）.md
+├── Gemini指令集、配置集.md
+├── obsidian常用regex.md
+└── 反直觉的悖论（没学会）.md
 ```
