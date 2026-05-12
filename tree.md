@@ -1,6 +1,8 @@
 ```text
 D:\Notes
 ├── .copilot-index/
+├── .vscode/
+│   └── settings.json
 ├── 00exps/
 │   ├── 00engineering_exp/
 │   │   ├── 00代码圣经.md
@@ -24,6 +26,7 @@ D:\Notes
 │   ├── 互传文件.md
 │   ├── 人际交往.md
 │   ├── 健康health与医疗.md
+│   ├── 压弯大王.md
 │   ├── 哲学 philosophy.md
 │   ├── 学习.md
 │   ├── 形象管理.md
@@ -165,6 +168,7 @@ D:\Notes
 │   │   │   ├── -1CUDA C++与GPU.md
 │   │   │   ├── -2现代 GPU 计算栈：从上层框架到硬件执行的双路径架构（SIMT + Tile）.md
 │   │   │   ├── 00各种环境的搭建方案.md
+│   │   │   ├── 00层次可视化.md
 │   │   │   ├── 01CUDA入门.md
 │   │   │   ├── 02并行序列操作工具库--Thrust.md
 │   │   │   ├── 03CUDA Runtime API基础.md
@@ -205,6 +209,9 @@ D:\Notes
 │   │   │   └── 05将计算和 IO 解耦.md
 │   │   ├── Rust/
 │   │   ├── Amdahl's Law(阿姆达尔定律).md
+│   │   ├── BLAS 标准、各种 BLAS 库；及 BLIS 框架、BLIS库的介绍.md
+│   │   ├── BLAS的命名规则.md
+│   │   ├── BLIS.md
 │   │   ├── taichi.md
 │   │   ├── vscode目录配置.md
 │   │   └── 高屋建瓴宏观角度一览.md
@@ -214,7 +221,7 @@ D:\Notes
 │   │   ├── datasets（未学）.md
 │   │   ├── diffusers（未学）.md
 │   │   ├── gradio（未学）.md
-│   │   ├── huggingface_hub.md
+│   │   ├── huggingface_hub（包括hf命令行应用的用法）.md
 │   │   ├── optimum（未学）.md
 │   │   ├── PEFT技术与peft库.md
 │   │   ├── safetensors（未学）.md
@@ -223,8 +230,7 @@ D:\Notes
 │   │   ├── Dense Retrieval（Vector Search）/
 │   │   │   └── ANN/
 │   │   │       ├── 00什么是ANN.md
-│   │   │       ├── 01HNSW数学原理.md
-│   │   │       └── 02手搓HNSW示例代码.md
+│   │   │       └── 01HNSW数学原理.md
 │   │   ├── Sparse Retrieval/
 │   │   │   ├── Data Structures/
 │   │   │   │   └── 01Inverted Index.md
@@ -306,7 +312,8 @@ D:\Notes
 │   │   ├── 02特征向量：稳定与独立之美.md
 │   │   ├── 03奇异值分解：绕过协方差矩阵，来求协方差矩阵的特征向量和特征值.md
 │   │   ├── 04奇异值：单位圆拉伸成椭圆.md
-│   │   └── 05条件数：数值稳定的判官.md
+│   │   ├── 05条件数：数值稳定的判官.md
+│   │   └── 06数据即算子，算子即数据.md
 │   ├── 计算性能（动手学深度学习的一章）/
 │   │   ├── 01编译器和解释器.md
 │   │   ├── 02异步计算.md
@@ -325,6 +332,8 @@ D:\Notes
 │   │   └── Gossip协议.md
 │   ├── AutoDL云显卡指南.md
 │   ├── ChatML.md
+│   ├── 如何让大模型越狱（亲测有效）.md
+│   ├── 究极加速矩阵乘法.md
 │   └── 贪心搜索，穷举搜索，束搜索.md
 ├── 02math/
 │   ├── calculus/
@@ -419,7 +428,7 @@ D:\Notes
 │   │   ├── 04逆矩阵.md
 │   │   ├── 05分块矩阵.md
 │   │   ├── 06向量.md
-│   │   ├── 07向量空间.md
+│   │   ├── 07向量空间、基变换.md
 │   │   ├── 08欧几里得空间.md
 │   │   ├── 09线性方程组.md
 │   │   ├── 10非齐次线性方程组解的结构.md
@@ -512,9 +521,11 @@ D:\Notes
 │   ├── 关于对数刻度.md
 │   ├── 同态、同构（待整理）.md
 │   ├── 复数运算complex number.md
+│   ├── 深入讲解单纯形法解线性规划.md
 │   └── 爱因斯坦求和约定.md
 ├── 03lang/
 │   ├── C/
+│   │   ├── gcc.md
 │   │   ├── struct.md
 │   │   └── 动态内存分配.md
 │   ├── cpp/
@@ -696,6 +707,7 @@ D:\Notes
 │   │   ├── 24面向接口编程.md
 │   │   ├── 25IO性能优化.md
 │   │   ├── 26与IDE协作.md
+│   │   ├── 27pdb.md
 │   │   ├── Rust的享受：python.analysis.inlayHints.md
 │   │   └── WSGI、ASGI简介.md
 │   ├── Rust/
@@ -709,6 +721,22 @@ D:\Notes
 │   │   │   ├── 00简介.md
 │   │   │   ├── cargo-binstall.md
 │   │   │   └── sccache加速编译.md
+│   │   ├── 关于引用、解引用的整理/
+│   │   │   ├── 00从应用角度，不要想那么多.md
+│   │   │   ├── 01Deref Coercion.md
+│   │   │   ├── 02Audoderef.md
+│   │   │   ├── 03Deref Trait.md
+│   │   │   ├── 04解引用(✱).md
+│   │   │   ├── 05所有权的本质.md
+│   │   │   ├── 06完全限定语法(UFCS).md
+│   │   │   ├── 07编译器的隐式干预机制：方法解析、引用传参自动转换、匹配人体工程学.md
+│   │   │   ├── 08Deref vs AsRef.md
+│   │   │   ├── 09闭包、常用宏默认是隐式降级为借用.md
+│   │   │   └── 10通用实现（Blanket Implementation 一揽子实现）.md
+│   │   ├── 关于类型系统的整理/
+│   │   │   ├── 01本地类型与外部类型.md
+│   │   │   ├── 02孤儿原则及其穿透机制.md
+│   │   │   └── 03cast与coercion.md
 │   │   ├── 实战：Latex-OCR/
 │   │   │   ├── 01内存与数据表示.md
 │   │   │   ├── 02操作系统 API 与系统调用.md
@@ -745,7 +773,9 @@ D:\Notes
 │   │   │   │   ├── 09安卓开发如何加速.md
 │   │   │   │   ├── 10安卓开发.md
 │   │   │   │   ├── 11多平台UI同时调试.md
-│   │   │   │   └── 12IPC.md
+│   │   │   │   ├── 12IPC.md
+│   │   │   │   ├── 13AppHandle和state.md
+│   │   │   │   └── 架构设计：门面函数、错误冒泡、状态聚合、函数位置等等.md
 │   │   │   ├── anyhow.md
 │   │   │   ├── async-trait.md
 │   │   │   ├── candle.md
@@ -754,9 +784,12 @@ D:\Notes
 │   │   │   ├── dirs.md
 │   │   │   ├── hf_hub.md
 │   │   │   ├── Rayon.md
+│   │   │   ├── rfd.md
 │   │   │   ├── serde.md
 │   │   │   ├── shellexpand.md
+│   │   │   ├── strum.md
 │   │   │   ├── tokio.md
+│   │   │   ├── walk.md
 │   │   │   └── which & dunce.md
 │   │   ├── -1常见工程问题与Rust的解决方案.md
 │   │   ├── 00前言与环境搭建 Preface and Environment Setup.md
@@ -767,7 +800,7 @@ D:\Notes
 │   │   ├── 05控制流.md
 │   │   ├── 06错误处理.md
 │   │   ├── 07cargo与crate.md
-│   │   ├── 08struct.md
+│   │   ├── 08struct和enum.md
 │   │   ├── 09Trait.md
 │   │   ├── 100一些命名规范.md
 │   │   ├── 10关键字.md
@@ -786,7 +819,7 @@ D:\Notes
 │   │   ├── 23属性.md
 │   │   ├── 24宏编程.md
 │   │   ├── 25图.md
-│   │   ├── 26iter.md
+│   │   ├── 26iter、for、迭代.md
 │   │   ├── 27文件系统.md
 │   │   ├── 28Rust for Python.md
 │   │   ├── 29SIMD与自动矢量化.md
@@ -797,7 +830,13 @@ D:\Notes
 │   │   ├── 34与IDE协作.md
 │   │   ├── 35extern.md
 │   │   ├── 36原子操作和内存顺序.md
-│   │   ├── 37解引用(✳)专题：复制、移动与智能指针.md
+│   │   ├── 38如何编写和运行测试(test).md
+│   │   ├── 39bench（基于 Criterion）.md
+│   │   ├── 40高阶 Trait 约束（HRTB）.md
+│   │   ├── 41AsRef.md
+│   │   ├── 42数据结构选择指南.md
+│   │   ├── 43pub和use对于父子，兄弟的可见性.md
+│   │   ├── 44From和FromStr.md
 │   │   ├── Scope.md
 │   │   └── 拓展：柯里化.md
 │   ├── SystemVerilog (SV)/
@@ -819,11 +858,6 @@ D:\Notes
 │   │   ├── -1附：如何从SV转向Verilog.md
 │   │   └── Verilog 实战：从零到“点亮 LED”.md
 │   ├── Windows编程/
-│   │   ├── windows crate/
-│   │   │   ├── 01.md
-│   │   │   ├── 02.md
-│   │   │   ├── 03.md
-│   │   │   └── 04.md
 │   │   ├── -1破解windows命名.md
 │   │   ├── 01入门.md
 │   │   ├── 02explorer资源管理器的双面角色.md
@@ -874,6 +908,8 @@ D:\Notes
 │   ├── 命令行工具文档写法（命令签名语法解读）.md
 │   └── 命令行，终端.md
 ├── compilers（待整理）/
+│   ├── 链接/
+│   │   └── 动态链接原理.md
 │   ├── 00待整理.md
 │   ├── 01词法分析 (Lexical Analysis).md
 │   ├── 02语法分析 (Syntax Analysis).md
@@ -890,6 +926,7 @@ D:\Notes
 │   │   ├── 你好，能看到我的笔记吗？@20260109_204556.md
 │   │   ├── 你好，能看到我的笔记吗？@20260109_204638.md
 │   │   ├── 你能看到我的笔记吗？@20260109_210305.md
+│   │   ├── 在吗？@20260429_122638.md
 │   │   ├── 我在哪提到过状态图的等效状态化简？@20260110_125948.md
 │   │   └── 说说我都学了什么？@20260109_205035.md
 │   ├── copilot-custom-prompts/
@@ -922,6 +959,36 @@ D:\Notes
 │   ├── Simplify.md
 │   ├── Summarize.md
 │   └── Translate to Chinese.md
+├── Cybersecurity/
+│   ├── Binary Patching/
+│   │   ├── 01实战：共享库注入.md
+│   │   ├── 02实战：入口点劫持.md
+│   │   └── 03前两种方案的对比.md
+│   ├── network/
+│   │   └── 01实战：中间人攻击 MITM（窃取nc传输的明文）.md
+│   ├── pwn/
+│   │   ├── lief/
+│   │   │   └── 01LIEF 基础入门指南：现代二进制文件修补技术.md
+│   │   ├── pwntools/
+│   │   │   ├── 01Pwntools 基础入门指南：现代漏洞利用开发框架.md
+│   │   │   └── 02shellcraft生成shellcode.md
+│   │   ├── 00前置知识.md
+│   │   └── 01没什么用的：Ret2Text 栈溢出、缓冲区溢出劫持.md
+│   ├── wireshark/
+│   │   ├── 01wireshark-GUI说明.md
+│   │   ├── 02两类过滤器.md
+│   │   ├── 03追踪流.md
+│   │   └── 04小琐碎知识点.md
+│   ├── -1NAT和桥接.md
+│   ├── 01实战：shell反弹，独享+加密的远程操控（含感染elf文件的脚本）.md
+│   ├── 02实战：隐蔽地读取文件并发送.md
+│   ├── bettercap.md
+│   ├── BPF.md
+│   ├── execve.md
+│   ├── tcpdump.md
+│   ├── 单工、半双工和全双工.md
+│   ├── 如何进行对windows的一次相对彻底的安全检查.md
+│   └── 术语辨析.md
 ├── data-structure-and-algorithm/
 │   ├── algorithm/
 │   │   ├── 00算法总结/
@@ -952,6 +1019,45 @@ D:\Notes
 │   │   ├── 17线性代数.md
 │   │   ├── 18计算几何一点点.md
 │   │   └── 浮点误差解决.md
+│   ├── 可视化大王--Gemini讲解经典案例/
+│   │   ├── 分支限界法/
+│   │   │   ├── 00哪里有什么分支限界法，不过都是遍历方式+两种剪枝.md
+│   │   │   ├── 分支限界法下的0-1背包问题.md
+│   │   │   └── 分支限界法下的TSP问题.md
+│   │   ├── 分治与递归/
+│   │   │   ├── 大整数乘法.md
+│   │   │   ├── 循环赛日程表.md
+│   │   │   ├── 快速排序.md
+│   │   │   ├── 最近点对问题.md
+│   │   │   ├── 棋盘覆盖.md
+│   │   │   └── 线性时间选择（中位数的中位数）.md
+│   │   ├── 动态规划/
+│   │   │   ├── 凸多边形最优三角剖分.md
+│   │   │   ├── 图像压缩.md
+│   │   │   ├── 多边形游戏.md
+│   │   │   ├── 最优二叉搜索树.md
+│   │   │   ├── 最大子段和.md
+│   │   │   ├── 最长公共子序列（LCS）.md
+│   │   │   └── 矩阵连乘.md
+│   │   ├── 回溯/
+│   │   │   ├── 00回溯的基本知识.md
+│   │   │   ├── n后问题.md
+│   │   │   ├── TSP问题.md
+│   │   │   ├── 图的m着色问题.md
+│   │   │   ├── 最大团问题.md
+│   │   │   ├── 最大装载量问题.md
+│   │   │   ├── 有障碍的棋盘覆盖，求方案个数的问题.md
+│   │   │   ├── 符号三角形.md
+│   │   │   └── 能不能装下的问题.md
+│   │   ├── 贪心/
+│   │   │   ├── 分硬币，最小化差值问题.md
+│   │   │   ├── 区间覆盖问题 vs 活动安排问题.md
+│   │   │   ├── 区间覆盖问题.md
+│   │   │   ├── 哈夫曼编码.md
+│   │   │   ├── 最小生成树.md
+│   │   │   └── 活动安排问题.md
+│   │   └── 随机化算法/
+│   │       └── 随机化算法的四种分类.md
 │   ├── 数据结构/
 │   │   ├── 01基本内容.md
 │   │   ├── 02编码.md
@@ -996,7 +1102,9 @@ D:\Notes
 │   │   ├── 09基础算法.md
 │   │   ├── 10动态规划.md
 │   │   └── 11补充内容.md
-│   └── leetcode_exp.md
+│   ├── leetcode_exp.md
+│   ├── 康托展开与逆康托展开.md
+│   └── 贪心选择性质、最优子结构性质，这两个的证明过程.md
 ├── database/
 │   ├── Github工程师谈系统设计.md
 │   ├── MySQL.md
@@ -1009,6 +1117,9 @@ D:\Notes
 │   │   ├── 软件架构.md
 │   │   └── 面向接口.md
 │   ├── Git/
+│   │   ├── 01多机协作（例如本地和AutoDL容器）.md
+│   │   ├── 02Github存放的其实是裸仓库.md
+│   │   ├── 03PR本质.md
 │   │   ├── Git Conventional Branches约定式分支.md
 │   │   ├── Git Conventional Commits约定式提交.md
 │   │   ├── Git.md
@@ -1026,9 +1137,6 @@ D:\Notes
 │       ├── tasks.json.md
 │       ├── Vscode相关小知识汇总.md
 │       └── 文档注释.md
-├── Excalidraw/
-│   └── Drawing 2026-03-21 21.38.09.excalidraw.md
-├── hack/
 ├── hardware/
 │   ├── cybernetics/
 │   │   ├── PID.md
@@ -1155,6 +1263,7 @@ D:\Notes
 │   ├── MCU.md
 │   ├── SRAM和DRAM.md
 │   ├── 十六进制大王.md
+│   ├── 华莱士树.md
 │   └── 核心板和底板.md
 ├── Ops/
 │   ├── CICD/
@@ -1175,19 +1284,33 @@ D:\Notes
 │   │   ├── Kubernetes(K8s)多容器编排（一点没看）.md
 │   │   ├── 在容器里开发（待学完）.md
 │   │   └── 基础知识.md
+│   ├── ip/
+│   │   ├── ip三剑客/
+│   │   │   ├── 00以中间人攻击中如何辨析ip为例，串起ip三个命令.md
+│   │   │   ├── 看懂ip addr.md
+│   │   │   ├── 看懂ip neighbor.md
+│   │   │   └── 看懂ip route.md
+│   │   ├── 01L2L3、网关、网络协议栈.md
+│   │   └── 02从应用层到网卡硬件的发射.md
 │   ├── ssh安全/
 │   │   ├── 00防火墙.md
 │   │   ├── 01限制ssh登录次数--fail2ban.md
 │   │   └── 02利用ssh端口转发，零信任完成Web初始化.md
 │   ├── acme和acme.sh.md
 │   ├── curl.md
+│   ├── fg.md
 │   ├── iperf3.md
 │   ├── journalctl.md
 │   ├── micro.md
+│   ├── netcat（nc）.md
 │   ├── NextTrace.md
+│   ├── openssl.md
+│   ├── perf.md
+│   ├── rsync.md
 │   ├── ss.md
 │   ├── ssh.md
 │   ├── systemctl.md
+│   ├── systemd.md
 │   ├── ufw.md
 │   ├── VNC.md
 │   ├── wget.md
@@ -1229,16 +1352,17 @@ D:\Notes
 │       ├── wsl.md
 │       └── 驱动安装教程.md
 ├── reverse-engineering/
-│   ├── -1ida常用快捷键.md
+│   ├── -1ida一本通.md
 │   ├── -2软件选型.md
 │   ├── 00hello_world静态分析.md
-│   ├── 010 Editor的使用指南.md
 │   ├── 01hello_world动态调试.md
 │   ├── 02找入口点专讲.md
 │   ├── 03字.md
 │   ├── 04rust逆向入门.md
-│   └── 05imports.md
-├── SIT（截至2026.4！）/
+│   ├── 05imports.md
+│   ├── linux 动态调试工具pwndbg.md
+│   └── 编辑器 010 Editor的使用指南.md
+├── SIT（截至2026.11！）/
 │   └── 概要.md
 ├── software-usage-instructions/
 │   ├── 7z压缩技术.md
@@ -1258,6 +1382,14 @@ D:\Notes
 │   │   ├── 有趣的实验/
 │   │   │   ├── 01浮点数精度问题.md
 │   │   │   └── 02浮点转整数但溢出的相关知识.md
+│   │   ├── 缓存Cache系列/
+│   │   │   ├── 01一题讲清缓存定位.md
+│   │   │   ├── 1000如何手算缓存不命中率（Cache Miss Rate）.md
+│   │   │   ├── 100矩阵乘法，哪种遍历方案对缓存最友好.md
+│   │   │   ├── 10缓存一致性与MESI协议.md
+│   │   │   ├── 11跨缓存行边界读取--通过对齐解决性能损耗问题.md
+│   │   │   ├── HPC--BLIS原理.md
+│   │   │   └── 矩阵计算的一些trick.md
 │   │   ├── -1循环展开--所有章节的一个综合应用.md
 │   │   ├── 01前言.md
 │   │   ├── 02信息的机器级表达.md
@@ -1265,11 +1397,15 @@ D:\Notes
 │   │   ├── 04汇编初步与进阶.md
 │   │   ├── 05整数.md
 │   │   ├── 06浮点数.md
-│   │   ├── 07栈.md
+│   │   ├── 07程序的机器级表示--基本.md
+│   │   ├── 08栈.md
+│   │   ├── 100VIPT、PIPT、TLB、旁路和直通.md
+│   │   ├── 100内存映射的整个流程.md
 │   │   ├── 101linux汇编程序示例精讲.md
-│   │   ├── 102函数调用与流水线.md
-│   │   ├── 103（还没看）.md
-│   │   ├── stack_demo.html
+│   │   ├── 101标准共享库与系统调用.md
+│   │   ├── 102动态链接和静态链接的可视化.md
+│   │   ├── 110函数调用与流水线.md
+│   │   ├── 组相联、全相联、高组相联.md
 │   │   └── ？？？浮点数的表示.md
 │   ├── shell专题/
 │   │   ├── 01进程模型与命令执行流程.md
@@ -1286,9 +1422,27 @@ D:\Notes
 │   │   ├── 200选项解析终止符.md
 │   │   ├── 300杂项.md
 │   │   └── 拓展：Command Wrapping.md
+│   ├── valgrind/
+│   │   └── valgrind.md
 │   ├── 内存对齐/
 │   │   ├── 01内存对齐.md
 │   │   └── 02内存对齐与原子操作：跨缓存行难以实现原子操作.md
+│   ├── 可执行文件相关知识/
+│   │   ├── 段与节/
+│   │   │   ├── 01段与节：ELF 链接、执行机制深度解析.md
+│   │   │   ├── 02段与节：分类.md
+│   │   │   ├── 03段与节：一个实例.md
+│   │   │   ├── 04段与节：关于权限.md
+│   │   │   └── 05PHT 的完整生命周期：内核级加载与 auxv 辅助向量交接.md
+│   │   ├── 联动ida/
+│   │   │   ├── 00ida下看的是什么.md
+│   │   │   ├── 01ida下如何轻松看懂段和节.md
+│   │   │   └── 02有.号和无.号的节.md
+│   │   ├── 00二进制布局.md
+│   │   ├── ASLR和PIC、PIE.md
+│   │   ├── Full RELRO.md
+│   │   ├── llvm-readelf.md
+│   │   └── 可执行文件elf结构.md
 │   ├── 缓存/
 │   │   ├── 01跨缓存行难以实现原子操作.md
 │   │   └── 02伪共享：用缓存行隔离或线程本地存储解决.md
@@ -1300,6 +1454,7 @@ D:\Notes
 │   ├── 内存.md
 │   ├── 双系统与系统迁移.md
 │   ├── 同步硬件异常.md
+│   ├── 如何决定怎么运行文件.md
 │   ├── 并发与同步.md
 │   ├── 查找机制（环境问题指南）.md
 │   ├── 汇编语言简介.md
@@ -1309,6 +1464,8 @@ D:\Notes
 │   ├── 线程与进程.md
 │   ├── 编译流程.md
 │   └── 调用栈.md
+├── User-Plugins/
+│   └── 自动折叠所有目录并高亮当前文件.js
 ├── web/
 │   ├── 00手搓服务器实战/
 │   │   ├── 01本地开发.md
@@ -1353,7 +1510,6 @@ D:\Notes
 │   │   ├── 安全地访问面板.md
 │   │   └── 零信任架构.md
 │   ├── web_dev/
-│   │   ├── backend/
 │   │   └── frontend/
 │   │       ├── Vue/
 │   │       │   ├── -1目录解读.md
@@ -1403,6 +1559,7 @@ D:\Notes
 │   │   └── 代理.md
 │   ├── Nginx.md
 │   ├── Reqable.md
+│   ├── 公网、局域网、网卡、子网，一文分清.md
 │   ├── 反向代理中的“路径错位”难题.md
 │   ├── 国内VPS、域名需备案.md
 │   ├── 如何分析本机复杂的网络环境.md
@@ -1456,8 +1613,8 @@ D:\Notes
 │   │       ├── 大物下能量专题.md
 │   │       └── 课外：定性与半定量物理学.md
 │   ├── 其他backup/
-│   │   ├── Bookmarks_2026-03-11.md
-│   │   └── Bookmarks_2026-04-02.md
+│   │   ├── Bookmarks_2026-04-02.md
+│   │   └── Bookmarks_2026-05-12.md
 │   ├── 湖大生活hnu/
 │   │   ├── 保研.md
 │   │   ├── 培养方案.md
@@ -1475,5 +1632,6 @@ D:\Notes
 │   └── 解决某些应用登陆后不会跳转的问题（如antigravity）.md
 ├── Gemini指令集、配置集.md
 ├── obsidian常用regex.md
+├── 做演示的工作流.md
 └── 反直觉的悖论（没学会）.md
 ```
