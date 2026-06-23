@@ -16,8 +16,10 @@ D:\Notes
 │   │   ├── 设计模式.md
 │   │   └── 风格指南.md
 │   ├── 神药汇聚/
+│   │   ├── 吡美莫司.md
 │   │   ├── 扶他林.md
-│   │   └── 爽身粉.md
+│   │   ├── 爽身粉.md
+│   │   └── 缓解肩颈酸痛.md
 │   ├── asking_exp.md
 │   ├── English_exp.md
 │   ├── Experience.md
@@ -26,20 +28,29 @@ D:\Notes
 │   ├── 互传文件.md
 │   ├── 人际交往.md
 │   ├── 健康health与医疗.md
+│   ├── 出国旅游攻略.md
 │   ├── 压弯大王.md
 │   ├── 哲学 philosophy.md
 │   ├── 学习.md
+│   ├── 实用绳结的口诀大全.md
 │   ├── 形象管理.md
-│   ├── 湘雅就医历史记录.md
+│   ├── 生活.md
 │   ├── 电动车.md
 │   └── 阅读.md
+├── 00出海营商/
+│   ├── -1架构设计.md
+│   ├── 00跨境金融和外汇监管.md
+│   ├── 01要检查的一些坑.md
+│   ├── 02全链成本优化.md
+│   ├── 100现代前端省心高效美观开发.md
+│   ├── 付费方案的选取.md
+│   └── 风格推荐：新粗野主义Neobrutalism.md
 ├── 01AI/
 │   ├── 00kaggle_code/
 │   │   ├── EDA.md
 │   │   └── kaggle学习历程.md
 │   ├── agent/
-│   │   ├── AstrBot/
-│   │   │   └── 01搭建.md
+│   │   ├── 00agent定义.md
 │   │   └── Model Context Protocol (MCP) 讲解与实战.md
 │   ├── alignment/
 │   │   ├── 综述/
@@ -211,9 +222,9 @@ D:\Notes
 │   │   ├── Amdahl's Law(阿姆达尔定律).md
 │   │   ├── BLAS 标准、各种 BLAS 库；及 BLIS 框架、BLIS库的介绍.md
 │   │   ├── BLAS的命名规则.md
-│   │   ├── BLIS.md
 │   │   ├── taichi.md
 │   │   ├── vscode目录配置.md
+│   │   ├── 伟哉！BLIS.md
 │   │   └── 高屋建瓴宏观角度一览.md
 │   ├── huggingface库家族/
 │   │   ├── 00对这些库的介绍.md
@@ -261,7 +272,7 @@ D:\Notes
 │   │   │   ├── 03脉动阵列Systolic Array.md
 │   │   │   ├── 04顶层模块、通信模块.md
 │   │   │   ├── 05和Python交互.md
-│   │   │   └── demo.html
+│   │   │   └── 脉动阵列.html
 │   │   └── pyserial.md
 │   ├── numerical-computation/
 │   │   ├── 100Kahan求和算法.md
@@ -304,9 +315,6 @@ D:\Notes
 │   │   ├── On-Policy 和Off-Policy.md
 │   │   ├── PPO.md
 │   │   └── 策略梯度PG.md
-│   ├── zeroclaw的应用/
-│   │   ├── 01什么是zeroclaw.md
-│   │   └── 01起步：在 Windows 本地搭建 QQ AI 助手.md
 │   ├── 线性代数应用的精讲/
 │   │   ├── 01协方差矩阵、投影方差与信息量.md
 │   │   ├── 02特征向量：稳定与独立之美.md
@@ -332,8 +340,11 @@ D:\Notes
 │   │   └── Gossip协议.md
 │   ├── AutoDL云显卡指南.md
 │   ├── ChatML.md
+│   ├── 原创：自然语言开发模板.md
 │   ├── 如何让大模型越狱（亲测有效）.md
+│   ├── 提示词工程Prompt engineering.md
 │   ├── 究极加速矩阵乘法.md
+│   ├── 让AI生成用于学习、理清思路的图文.md
 │   └── 贪心搜索，穷举搜索，束搜索.md
 ├── 02math/
 │   ├── calculus/
@@ -569,7 +580,6 @@ D:\Notes
 │   │   ├── const.md
 │   │   ├── constexpr.md
 │   │   ├── size专题.md
-│   │   ├── 代理类.md
 │   │   ├── 内联inline.md
 │   │   ├── 参数.md
 │   │   ├── 字符串操作.md
@@ -778,13 +788,15 @@ D:\Notes
 │   │   │   │   └── 架构设计：门面函数、错误冒泡、状态聚合、函数位置等等.md
 │   │   │   ├── anyhow.md
 │   │   │   ├── async-trait.md
+│   │   │   ├── Axum.md
 │   │   │   ├── candle.md
 │   │   │   ├── clap.md
-│   │   │   ├── crossterm & ratatui.md
 │   │   │   ├── dirs.md
 │   │   │   ├── hf_hub.md
+│   │   │   ├── ratatui & crossterm.md
 │   │   │   ├── Rayon.md
 │   │   │   ├── rfd.md
+│   │   │   ├── SeaORM.md
 │   │   │   ├── serde.md
 │   │   │   ├── shellexpand.md
 │   │   │   ├── strum.md
@@ -921,30 +933,20 @@ D:\Notes
 │   ├── 08AI写的编译器示例.md
 │   └── 09Wrapper, Compiler Driver, Build Backend.md
 ├── copilot/
-│   ├── copilot-conversations/
-│   │   ├── 你好，能看到我的笔记吗？@20260109_203516.md
-│   │   ├── 你好，能看到我的笔记吗？@20260109_204556.md
-│   │   ├── 你好，能看到我的笔记吗？@20260109_204638.md
-│   │   ├── 你能看到我的笔记吗？@20260109_210305.md
-│   │   ├── 在吗？@20260429_122638.md
-│   │   ├── 我在哪提到过状态图的等效状态化简？@20260110_125948.md
-│   │   └── 说说我都学了什么？@20260109_205035.md
-│   ├── copilot-custom-prompts/
-│   │   ├── Emojify.md
-│   │   ├── Explain like I am 5.md
-│   │   ├── Fix grammar and spelling.md
-│   │   ├── Generate glossary.md
-│   │   ├── Generate table of contents.md
-│   │   ├── Make longer.md
-│   │   ├── Make shorter.md
-│   │   ├── Remove URLs.md
-│   │   ├── Rewrite as tweet thread.md
-│   │   ├── Rewrite as tweet.md
-│   │   ├── Simplify.md
-│   │   ├── Summarize.md
-│   │   └── Translate to Chinese.md
-│   └── memory/
-│       └── Recent Conversations.md
+│   └── copilot-custom-prompts/
+│       ├── Emojify.md
+│       ├── Explain like I am 5.md
+│       ├── Fix grammar and spelling.md
+│       ├── Generate glossary.md
+│       ├── Generate table of contents.md
+│       ├── Make longer.md
+│       ├── Make shorter.md
+│       ├── Remove URLs.md
+│       ├── Rewrite as tweet thread.md
+│       ├── Rewrite as tweet.md
+│       ├── Simplify.md
+│       ├── Summarize.md
+│       └── Translate to Chinese.md
 ├── copilot-custom-prompts/
 │   ├── Emojify.md
 │   ├── Explain like I am 5.md
@@ -1023,8 +1025,13 @@ D:\Notes
 │   │   ├── 分支限界法/
 │   │   │   ├── 00哪里有什么分支限界法，不过都是遍历方式+两种剪枝.md
 │   │   │   ├── 分支限界法下的0-1背包问题.md
-│   │   │   └── 分支限界法下的TSP问题.md
+│   │   │   ├── 分支限界法下的TSP问题.md
+│   │   │   ├── 分支限界法下的最大团问题.md
+│   │   │   ├── 分支限界法下的最小权顶点覆盖问题.md
+│   │   │   ├── 分支限界法下的翻转排序问题.md
+│   │   │   └── 分支限界法解决流水作业调度问题（M2完成时间和）.md
 │   │   ├── 分治与递归/
+│   │   │   ├── 00：reCAPTCHA.md
 │   │   │   ├── 大整数乘法.md
 │   │   │   ├── 循环赛日程表.md
 │   │   │   ├── 快速排序.md
@@ -1032,12 +1039,17 @@ D:\Notes
 │   │   │   ├── 棋盘覆盖.md
 │   │   │   └── 线性时间选择（中位数的中位数）.md
 │   │   ├── 动态规划/
+│   │   │   ├── 0-1背包.md
+│   │   │   ├── 00：HITS、影响力最大化、.md
 │   │   │   ├── 凸多边形最优三角剖分.md
+│   │   │   ├── 动态规划解决无分隔符字典问题.md
 │   │   │   ├── 图像压缩.md
 │   │   │   ├── 多边形游戏.md
 │   │   │   ├── 最优二叉搜索树.md
+│   │   │   ├── 最优批处理问题.md
 │   │   │   ├── 最大子段和.md
 │   │   │   ├── 最长公共子序列（LCS）.md
+│   │   │   ├── 流水作业调度问题（两台机器总时间）.md
 │   │   │   └── 矩阵连乘.md
 │   │   ├── 回溯/
 │   │   │   ├── 00回溯的基本知识.md
@@ -1048,7 +1060,10 @@ D:\Notes
 │   │   │   ├── 最大装载量问题.md
 │   │   │   ├── 有障碍的棋盘覆盖，求方案个数的问题.md
 │   │   │   ├── 符号三角形.md
-│   │   │   └── 能不能装下的问题.md
+│   │   │   ├── 能不能装下的问题.md
+│   │   │   └── 记忆化搜索解决无分隔符字典问题.md
+│   │   ├── 图算法/
+│   │   │   └── 拓扑排序.md
 │   │   ├── 贪心/
 │   │   │   ├── 分硬币，最小化差值问题.md
 │   │   │   ├── 区间覆盖问题 vs 活动安排问题.md
@@ -1057,6 +1072,7 @@ D:\Notes
 │   │   │   ├── 最小生成树.md
 │   │   │   └── 活动安排问题.md
 │   │   └── 随机化算法/
+│   │       ├── 00：Rabin开启随机化时代.md
 │   │       └── 随机化算法的四种分类.md
 │   ├── 数据结构/
 │   │   ├── 01基本内容.md
@@ -1277,13 +1293,15 @@ D:\Notes
 │   │   │   └── 07变量.md
 │   │   └── CICD简介.md
 │   ├── Docker/
+│   │   ├── 00常用运维命令.md
 │   │   ├── DevOps.md
 │   │   ├── Docker Compose.md
 │   │   ├── Dockerfile.md
 │   │   ├── Docker使用.md
 │   │   ├── Kubernetes(K8s)多容器编排（一点没看）.md
 │   │   ├── 在容器里开发（待学完）.md
-│   │   └── 基础知识.md
+│   │   ├── 基础知识.md
+│   │   └── 环境变量.md
 │   ├── ip/
 │   │   ├── ip三剑客/
 │   │   │   ├── 00以中间人攻击中如何辨析ip为例，串起ip三个命令.md
@@ -1296,21 +1314,22 @@ D:\Notes
 │   │   ├── 00防火墙.md
 │   │   ├── 01限制ssh登录次数--fail2ban.md
 │   │   └── 02利用ssh端口转发，零信任完成Web初始化.md
+│   ├── systemd生态/
+│   │   ├── 00systemd.md
+│   │   ├── 01systemctl.md
+│   │   └── 02journalctl.md
 │   ├── acme和acme.sh.md
 │   ├── curl.md
 │   ├── fg.md
 │   ├── iperf3.md
-│   ├── journalctl.md
 │   ├── micro.md
 │   ├── netcat（nc）.md
 │   ├── NextTrace.md
 │   ├── openssl.md
-│   ├── perf.md
+│   ├── perf（wsl2下硬件事件不可用）.md
 │   ├── rsync.md
 │   ├── ss.md
 │   ├── ssh.md
-│   ├── systemctl.md
-│   ├── systemd.md
 │   ├── ufw.md
 │   ├── VNC.md
 │   ├── wget.md
@@ -1319,11 +1338,6 @@ D:\Notes
 │   └── 排查网络问题.md
 ├── OS/
 │   ├── Android/
-│   │   ├── 实战：安卓机爆改AstrBot的QQ服务器/
-│   │   │   ├── 00官方文档永远是你爹.md
-│   │   │   ├── 01配置termux与proot-distro.md
-│   │   │   ├── 02配置AstrBot和Napcat.md
-│   │   │   └── 03一键自动化部署.md
 │   │   ├── 实战：破解mumu模拟器/
 │   │   │   └── 01破解方案.md
 │   │   ├── 01环境搭建.md
@@ -1345,6 +1359,7 @@ D:\Notes
 │   │   ├── zsh实战：wsl下conda-vscode启动器.md
 │   │   ├── 实用工具命令.md
 │   │   ├── 服务器参数查询.md
+│   │   ├── 用户：组的美学--UID、GID.md
 │   │   └── 符号链接.md
 │   └── Windows/
 │       ├── powershell.md
@@ -1379,33 +1394,62 @@ D:\Notes
 │   │   ├── 01前言.md
 │   │   └── 02入门.md
 │   ├── HNU-计算机系统/
-│   │   ├── 有趣的实验/
-│   │   │   ├── 01浮点数精度问题.md
-│   │   │   └── 02浮点转整数但溢出的相关知识.md
-│   │   ├── 缓存Cache系列/
-│   │   │   ├── 01一题讲清缓存定位.md
+│   │   ├── 01基础/
+│   │   │   ├── 01前言.md
+│   │   │   ├── 02信息的机器级表达.md
+│   │   │   ├── 03hello world的诞生.md
+│   │   │   ├── 04汇编初步与进阶.md
+│   │   │   ├── 05整数.md
+│   │   │   ├── 06浮点数.md
+│   │   │   ├── 07程序的机器级表示--基本.md
+│   │   │   ├── 08栈.md
+│   │   │   ├── 09程序的机器级表示 - 控制.md
+│   │   │   ├── 10程序的机器级表示 - 过程.md
+│   │   │   ├── 11程序的机器级表示 - 数据.md
+│   │   │   └── 12函数调用与流水线.md
+│   │   ├── 02链接/
+│   │   │   ├── 00动态链接和静态链接的可视化.md
+│   │   │   ├── 01链接与符号解析 (Linking & Symbol Resolution).md
+│   │   │   ├── 02链接器与重定位 (Linker & Relocation).md
+│   │   │   ├── 03加载、静态库与动态链接.md
+│   │   │   ├── 100-fPIC与-fPIE.md
+│   │   │   ├── 101标准共享库与系统调用.md
+│   │   │   └── 一文通--从静态缝合到动态协同的底层全景解析.md
+│   │   ├── 03缓存Cache系列/
+│   │   │   ├── 01存储基础.md
+│   │   │   ├── 02Cache高速缓存.md
+│   │   │   ├── 03Cache 与程序性能优化.md
+│   │   │   ├── 09一题讲清缓存定位.md
+│   │   │   ├── 1000为什么是tag+index+offset的格式.md
 │   │   │   ├── 1000如何手算缓存不命中率（Cache Miss Rate）.md
 │   │   │   ├── 100矩阵乘法，哪种遍历方案对缓存最友好.md
 │   │   │   ├── 10缓存一致性与MESI协议.md
 │   │   │   ├── 11跨缓存行边界读取--通过对齐解决性能损耗问题.md
 │   │   │   ├── HPC--BLIS原理.md
-│   │   │   └── 矩阵计算的一些trick.md
+│   │   │   ├── 矩阵计算的一些trick.md
+│   │   │   └── 组相联、全相联、高组相联.md
+│   │   ├── 04虚拟内存/
+│   │   │   ├── 01虚拟存储器.md
+│   │   │   ├── 02地址翻译.md
+│   │   │   ├── 10VIPT、PIPT、TLB、旁路和直通.md
+│   │   │   ├── 11内存映射的整个流程可视化.md
+│   │   │   ├── PIPT.md
+│   │   │   ├── VIPT.md
+│   │   │   ├── VMA.md
+│   │   │   ├── 一题讲清VA转PA.md
+│   │   │   ├── 内存写，流程全景.md
+│   │   │   └── 内存读，流程全景.md
+│   │   ├── 05进程/
+│   │   │   ├── 01异常与进程.md
+│   │   │   ├── 02父子进程同步与信号.md
+│   │   │   ├── 03优化程序性能（一）.md
+│   │   │   └── 04优化程序性能（二）.md
+│   │   ├── 有趣的实验/
+│   │   │   ├── 01浮点数精度问题.md
+│   │   │   ├── 02浮点转整数但溢出的相关知识.md
+│   │   │   └── 03手搓仙人：用汇编极致压缩elf文件体积.md
 │   │   ├── -1循环展开--所有章节的一个综合应用.md
-│   │   ├── 01前言.md
-│   │   ├── 02信息的机器级表达.md
-│   │   ├── 03hello world的诞生.md
-│   │   ├── 04汇编初步与进阶.md
-│   │   ├── 05整数.md
-│   │   ├── 06浮点数.md
-│   │   ├── 07程序的机器级表示--基本.md
-│   │   ├── 08栈.md
-│   │   ├── 100VIPT、PIPT、TLB、旁路和直通.md
-│   │   ├── 100内存映射的整个流程.md
-│   │   ├── 101linux汇编程序示例精讲.md
-│   │   ├── 101标准共享库与系统调用.md
-│   │   ├── 102动态链接和静态链接的可视化.md
-│   │   ├── 110函数调用与流水线.md
-│   │   ├── 组相联、全相联、高组相联.md
+│   │   ├── 信号的完整流程泳道图.md
 │   │   └── ？？？浮点数的表示.md
 │   ├── shell专题/
 │   │   ├── 01进程模型与命令执行流程.md
@@ -1423,7 +1467,7 @@ D:\Notes
 │   │   ├── 300杂项.md
 │   │   └── 拓展：Command Wrapping.md
 │   ├── valgrind/
-│   │   └── valgrind.md
+│   │   └── valgrind（粗浅学了一下）.md
 │   ├── 内存对齐/
 │   │   ├── 01内存对齐.md
 │   │   └── 02内存对齐与原子操作：跨缓存行难以实现原子操作.md
@@ -1451,6 +1495,7 @@ D:\Notes
 │   ├── Bootloader.md
 │   ├── cs.md
 │   ├── DRAM读取数据的物理过程.md
+│   ├── U盘live系统版本答案--Ventoy.md
 │   ├── 内存.md
 │   ├── 双系统与系统迁移.md
 │   ├── 同步硬件异常.md
@@ -1531,43 +1576,16 @@ D:\Notes
 │   ├── 内网穿透/
 │   │   ├── 内网穿透(如果没有ipv6的话)&自搭建公网入口实战.md
 │   │   └── 日一声手搓内网穿透Mini服务器.md
-│   ├── 实战：VPS 全栈部署手册（自建中转+web服务混合体）/
-│   │   ├── 00术语及其关系的解释.md
-│   │   ├── 01基础设施采购.md
-│   │   ├── 02远程连接与初始化.md
-│   │   ├── 03协议的选型.md
-│   │   ├── 04服务器用Xray部署Vless（TLS+Vision）.md
-│   │   ├── 06客户端配置.md
-│   │   ├── 07配置Caddy.md
-│   │   ├── 08证书管理.md
-│   │   ├── 09当前架构数据包流向分析.md
-│   │   ├── 100开启BBR.md
-│   │   ├── 201CDN.md
-│   │   ├── 202搭建CDN节点.md
-│   │   ├── CIDR记法.md
-│   │   ├── clash家族的配置教程.md
-│   │   ├── cloudflare warp烂IP逆天改命.md
-│   │   ├── GFW相关.md
-│   │   ├── KVM.md
-│   │   ├── QoS限制，Hysteria2被限速的原因分析.md
-│   │   ├── Vless协议.md
-│   │   ├── Xray.md
-│   │   ├── 协议对比.md
-│   │   └── 线路相关.md
-│   ├── 科学上网/
-│   │   ├── TUN、TAP.md
-│   │   └── 代理.md
 │   ├── Nginx.md
 │   ├── Reqable.md
 │   ├── 公网、局域网、网卡、子网，一文分清.md
-│   ├── 反向代理中的“路径错位”难题.md
-│   ├── 国内VPS、域名需备案.md
 │   ├── 如何分析本机复杂的网络环境.md
 │   ├── 局域网互联.md
 │   ├── 手机流量加速（似乎有效果）.md
 │   └── 端口.md
 ├── 一些协议与格式/
-│   └── zip.md
+│   ├── zip.md
+│   └── 键码协议大全--从字符到事件：终端键盘协议与 ANSI 转义序列完全指南.md
 ├── 奇技淫巧/
 │   └── 隐写术之：躲猫猫的zip.md
 ├── 没用的CS/
@@ -1583,8 +1601,7 @@ D:\Notes
 ├── 网络编程/
 │   └── 流：内存复用.md
 ├── 隐藏起来不让看/
-│   ├── 保研指南.md
-│   └── 张子兴（等你动手学看完了再去）.md
+│   └── 保研指南.md
 ├── 非CS/
 │   ├── how-to-make-presentation/
 │   │   ├── 演讲稿_cn（仅作参考，与英文版有巨大出入，以英文为准）.md
@@ -1612,9 +1629,6 @@ D:\Notes
 │   │       ├── 大物下佛脚--磁.md
 │   │       ├── 大物下能量专题.md
 │   │       └── 课外：定性与半定量物理学.md
-│   ├── 其他backup/
-│   │   ├── Bookmarks_2026-04-02.md
-│   │   └── Bookmarks_2026-05-12.md
 │   ├── 湖大生活hnu/
 │   │   ├── 保研.md
 │   │   ├── 培养方案.md
@@ -1630,7 +1644,8 @@ D:\Notes
 │   ├── 万能的淘宝.md
 │   ├── 王者荣耀一个人玩五个号.md
 │   └── 解决某些应用登陆后不会跳转的问题（如antigravity）.md
-├── Gemini指令集、配置集.md
+├── AI、Agent高效沟通、协作.md
+├── Gemini、AI、Agent的指令集、配置集.md
 ├── obsidian常用regex.md
 ├── 做演示的工作流.md
 └── 反直觉的悖论（没学会）.md
