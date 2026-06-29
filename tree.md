@@ -16,10 +16,9 @@ D:\Notes
 │   │   ├── 设计模式.md
 │   │   └── 风格指南.md
 │   ├── 神药汇聚/
-│   │   ├── 吡美莫司.md
+│   │   ├── 头中立位.md
 │   │   ├── 扶他林.md
-│   │   ├── 爽身粉.md
-│   │   └── 缓解肩颈酸痛.md
+│   │   └── 爽身粉.md
 │   ├── asking_exp.md
 │   ├── English_exp.md
 │   ├── Experience.md
@@ -28,7 +27,7 @@ D:\Notes
 │   ├── 互传文件.md
 │   ├── 人际交往.md
 │   ├── 健康health与医疗.md
-│   ├── 出国旅游攻略.md
+│   ├── 出国旅游、买外币攻略.md
 │   ├── 压弯大王.md
 │   ├── 哲学 philosophy.md
 │   ├── 学习.md
@@ -51,7 +50,9 @@ D:\Notes
 │   │   └── kaggle学习历程.md
 │   ├── agent/
 │   │   ├── 00agent定义.md
-│   │   └── Model Context Protocol (MCP) 讲解与实战.md
+│   │   ├── MCP上下文注入时机.md
+│   │   ├── MCP讲解与实战.md
+│   │   └── MCP配置字段.md
 │   ├── alignment/
 │   │   ├── 综述/
 │   │   │   ├── 01引言.md
@@ -283,6 +284,9 @@ D:\Notes
 │   │   ├── 02.md
 │   │   ├── 03.md
 │   │   └── 04.md
+│   ├── prompt-engineering/
+│   │   ├── 01提示词工程小技巧.md
+│   │   └── 02不懂分词器你搞个毛线提示词--分词器基础知识之BPE.md
 │   ├── RL/
 │   │   ├── DRL/
 │   │   │   ├── 01DQN.md
@@ -340,12 +344,14 @@ D:\Notes
 │   │   └── Gossip协议.md
 │   ├── AutoDL云显卡指南.md
 │   ├── ChatML.md
-│   ├── 原创：自然语言开发模板.md
 │   ├── 如何让大模型越狱（亲测有效）.md
-│   ├── 提示词工程Prompt engineering.md
 │   ├── 究极加速矩阵乘法.md
-│   ├── 让AI生成用于学习、理清思路的图文.md
 │   └── 贪心搜索，穷举搜索，束搜索.md
+├── 01沟通的艺术--agent是长情的告白/
+│   ├── mermaid/
+│   │   ├── 双王：时序图与流程图.md
+│   │   └── 时序图sequenceDiagram专讲.md
+│   └── AI、Agent高效沟通、协作.md
 ├── 02math/
 │   ├── calculus/
 │   │   ├── 上册/
@@ -918,7 +924,8 @@ D:\Notes
 │   ├── aichat.md
 │   ├── fzf.md
 │   ├── 命令行工具文档写法（命令签名语法解读）.md
-│   └── 命令行，终端.md
+│   ├── 命令行，终端.md
+│   └── 常见的包装器.md
 ├── compilers（待整理）/
 │   ├── 链接/
 │   │   └── 动态链接原理.md
@@ -1644,9 +1651,9 @@ D:\Notes
 │   ├── 万能的淘宝.md
 │   ├── 王者荣耀一个人玩五个号.md
 │   └── 解决某些应用登陆后不会跳转的问题（如antigravity）.md
-├── AI、Agent高效沟通、协作.md
-├── Gemini、AI、Agent的指令集、配置集.md
+├── Gemini 网页版  的指令集.md
 ├── obsidian常用regex.md
 ├── 做演示的工作流.md
-└── 反直觉的悖论（没学会）.md
+├── 反直觉的悖论（没学会）.md
+└── 如何让AI辅助学习、生成理清思路的图文.md
 ```
