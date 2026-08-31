@@ -1,5 +1,164 @@
 ```text
 D:\Notes
+├── .agents/
+│   └── skills/
+│       ├── copilot-fetch-x/
+│       │   ├── fetch-x.cmd
+│       │   ├── fetch-x.ps1
+│       │   ├── fetch-x.sh
+│       │   └── SKILL.md
+│       ├── copilot-read-pdf/
+│       │   ├── read-pdf.cmd
+│       │   ├── read-pdf.ps1
+│       │   ├── read-pdf.sh
+│       │   └── SKILL.md
+│       ├── copilot-web-fetch/
+│       │   ├── SKILL.md
+│       │   ├── web-fetch.cmd
+│       │   ├── web-fetch.ps1
+│       │   └── web-fetch.sh
+│       ├── copilot-web-search/
+│       │   ├── SKILL.md
+│       │   ├── web-search.cmd
+│       │   ├── web-search.ps1
+│       │   └── web-search.sh
+│       ├── copilot-youtube-transcript/
+│       │   ├── SKILL.md
+│       │   ├── youtube-transcript.cmd
+│       │   ├── youtube-transcript.ps1
+│       │   └── youtube-transcript.sh
+│       ├── json-canvas/
+│       │   ├── references/
+│       │   │   └── EXAMPLES.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-bases/
+│       │   ├── references/
+│       │   │   ├── EXAMPLES.md
+│       │   │   └── FUNCTIONS_REFERENCE.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-cli/
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-markdown/
+│       │   ├── references/
+│       │   │   ├── CALLOUTS.md
+│       │   │   ├── EMBEDS.md
+│       │   │   └── PROPERTIES.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       └── symposium-publish/
+│           ├── SKILL.md
+│           ├── symposium-publish.cmd
+│           ├── symposium-publish.ps1
+│           └── symposium-publish.sh
+├── .claude/
+│   └── skills/
+│       ├── copilot-fetch-x/
+│       │   ├── fetch-x.cmd
+│       │   ├── fetch-x.ps1
+│       │   ├── fetch-x.sh
+│       │   └── SKILL.md
+│       ├── copilot-read-pdf/
+│       │   ├── read-pdf.cmd
+│       │   ├── read-pdf.ps1
+│       │   ├── read-pdf.sh
+│       │   └── SKILL.md
+│       ├── copilot-web-fetch/
+│       │   ├── SKILL.md
+│       │   ├── web-fetch.cmd
+│       │   ├── web-fetch.ps1
+│       │   └── web-fetch.sh
+│       ├── copilot-web-search/
+│       │   ├── SKILL.md
+│       │   ├── web-search.cmd
+│       │   ├── web-search.ps1
+│       │   └── web-search.sh
+│       ├── copilot-youtube-transcript/
+│       │   ├── SKILL.md
+│       │   ├── youtube-transcript.cmd
+│       │   ├── youtube-transcript.ps1
+│       │   └── youtube-transcript.sh
+│       ├── json-canvas/
+│       │   ├── references/
+│       │   │   └── EXAMPLES.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-bases/
+│       │   ├── references/
+│       │   │   ├── EXAMPLES.md
+│       │   │   └── FUNCTIONS_REFERENCE.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-cli/
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-markdown/
+│       │   ├── references/
+│       │   │   ├── CALLOUTS.md
+│       │   │   ├── EMBEDS.md
+│       │   │   └── PROPERTIES.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       └── symposium-publish/
+│           ├── SKILL.md
+│           ├── symposium-publish.cmd
+│           ├── symposium-publish.ps1
+│           └── symposium-publish.sh
+├── .opencode/
+│   └── skills/
+│       ├── copilot-fetch-x/
+│       │   ├── fetch-x.cmd
+│       │   ├── fetch-x.ps1
+│       │   ├── fetch-x.sh
+│       │   └── SKILL.md
+│       ├── copilot-read-pdf/
+│       │   ├── read-pdf.cmd
+│       │   ├── read-pdf.ps1
+│       │   ├── read-pdf.sh
+│       │   └── SKILL.md
+│       ├── copilot-web-fetch/
+│       │   ├── SKILL.md
+│       │   ├── web-fetch.cmd
+│       │   ├── web-fetch.ps1
+│       │   └── web-fetch.sh
+│       ├── copilot-web-search/
+│       │   ├── SKILL.md
+│       │   ├── web-search.cmd
+│       │   ├── web-search.ps1
+│       │   └── web-search.sh
+│       ├── copilot-youtube-transcript/
+│       │   ├── SKILL.md
+│       │   ├── youtube-transcript.cmd
+│       │   ├── youtube-transcript.ps1
+│       │   └── youtube-transcript.sh
+│       ├── json-canvas/
+│       │   ├── references/
+│       │   │   └── EXAMPLES.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-bases/
+│       │   ├── references/
+│       │   │   ├── EXAMPLES.md
+│       │   │   └── FUNCTIONS_REFERENCE.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-cli/
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-markdown/
+│       │   ├── references/
+│       │   │   ├── CALLOUTS.md
+│       │   │   ├── EMBEDS.md
+│       │   │   └── PROPERTIES.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       └── symposium-publish/
+│           ├── SKILL.md
+│           ├── symposium-publish.cmd
+│           ├── symposium-publish.ps1
+│           └── symposium-publish.sh
 ├── .vscode/
 │   └── settings.json
 ├── 00exps/
@@ -50,6 +209,26 @@ D:\Notes
 │   │   ├── EDA.md
 │   │   └── kaggle学习历程.md
 │   ├── agent/
+│   │   ├── dsh/
+│   │   │   ├── -1pnpm.md
+│   │   │   ├── -2开发与运行环境的搭建.md
+│   │   │   ├── -3why dsh.md
+│   │   │   ├── 00小细节.md
+│   │   │   ├── 01插件入门.md
+│   │   │   ├── 02ctx上下文对象.md
+│   │   │   ├── 03inject、依赖、内置服务.md
+│   │   │   ├── 04defineTool.md
+│   │   │   ├── 05插件配置：Config 与 Schemastery.md
+│   │   │   ├── 06Fiber状态机.md
+│   │   │   ├── 07依赖驱动加载、自动重载与嵌套上下文.md
+│   │   │   ├── 08用 Service 基类提供服务.md
+│   │   │   ├── 09服务隔离与作用域.md
+│   │   │   ├── 100待了解的一些进阶方向.md
+│   │   │   ├── 10事件系统.md
+│   │   │   ├── 11上下文专题.md
+│   │   │   ├── 12seam、capability（未读）.md
+│   │   │   ├── 13组合包 bundle 与 profile：两个 manifest.md
+│   │   │   └── 14安装插件；配置加载顺序.md
 │   │   ├── pi/
 │   │   │   ├── -1 pi --help的简化版+汉化版（截至版本 v0.80.3）.md
 │   │   │   ├── -2 VSCODE+TUI，而非单独的TUI或桌面应用.md
@@ -1018,20 +1197,72 @@ D:\Notes
 │   ├── 08AI写的编译器示例.md
 │   └── 09Wrapper, Compiler Driver, Build Backend.md
 ├── copilot/
-│   └── copilot-custom-prompts/
-│       ├── Emojify.md
-│       ├── Explain like I am 5.md
-│       ├── Fix grammar and spelling.md
-│       ├── Generate glossary.md
-│       ├── Generate table of contents.md
-│       ├── Make longer.md
-│       ├── Make shorter.md
-│       ├── Remove URLs.md
-│       ├── Rewrite as tweet thread.md
-│       ├── Rewrite as tweet.md
-│       ├── Simplify.md
-│       ├── Summarize.md
-│       └── Translate to Chinese.md
+│   ├── copilot-custom-prompts/
+│   │   ├── Emojify.md
+│   │   ├── Explain like I am 5.md
+│   │   ├── Fix grammar and spelling.md
+│   │   ├── Generate glossary.md
+│   │   ├── Generate table of contents.md
+│   │   ├── Make longer.md
+│   │   ├── Make shorter.md
+│   │   ├── Remove URLs.md
+│   │   ├── Rewrite as tweet thread.md
+│   │   ├── Rewrite as tweet.md
+│   │   ├── Simplify.md
+│   │   ├── Summarize.md
+│   │   └── Translate to Chinese.md
+│   └── skills/
+│       ├── copilot-fetch-x/
+│       │   ├── fetch-x.cmd
+│       │   ├── fetch-x.ps1
+│       │   ├── fetch-x.sh
+│       │   └── SKILL.md
+│       ├── copilot-read-pdf/
+│       │   ├── read-pdf.cmd
+│       │   ├── read-pdf.ps1
+│       │   ├── read-pdf.sh
+│       │   └── SKILL.md
+│       ├── copilot-web-fetch/
+│       │   ├── SKILL.md
+│       │   ├── web-fetch.cmd
+│       │   ├── web-fetch.ps1
+│       │   └── web-fetch.sh
+│       ├── copilot-web-search/
+│       │   ├── SKILL.md
+│       │   ├── web-search.cmd
+│       │   ├── web-search.ps1
+│       │   └── web-search.sh
+│       ├── copilot-youtube-transcript/
+│       │   ├── SKILL.md
+│       │   ├── youtube-transcript.cmd
+│       │   ├── youtube-transcript.ps1
+│       │   └── youtube-transcript.sh
+│       ├── json-canvas/
+│       │   ├── references/
+│       │   │   └── EXAMPLES.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-bases/
+│       │   ├── references/
+│       │   │   ├── EXAMPLES.md
+│       │   │   └── FUNCTIONS_REFERENCE.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-cli/
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       ├── obsidian-markdown/
+│       │   ├── references/
+│       │   │   ├── CALLOUTS.md
+│       │   │   ├── EMBEDS.md
+│       │   │   └── PROPERTIES.md
+│       │   ├── LICENSE
+│       │   └── SKILL.md
+│       └── symposium-publish/
+│           ├── SKILL.md
+│           ├── symposium-publish.cmd
+│           ├── symposium-publish.ps1
+│           └── symposium-publish.sh
 ├── copilot-custom-prompts/
 │   ├── Emojify.md
 │   ├── Explain like I am 5.md
@@ -1493,6 +1724,372 @@ D:\Notes
 │   │   └── SKILL.md
 │   ├── dan/
 │   │   ├── dan-mcp.py
+│   │   └── SKILL.md
+│   ├── dsh-docs/
+│   │   ├── docs/
+│   │   │   ├── cookbook/
+│   │   │   │   ├── adding-a-package.i18n.yaml
+│   │   │   │   ├── adding-a-package.md
+│   │   │   │   ├── adding-a-package.zh.md
+│   │   │   │   ├── adding-a-settings-card.i18n.yaml
+│   │   │   │   ├── adding-a-settings-card.md
+│   │   │   │   ├── adding-a-settings-card.zh.md
+│   │   │   │   ├── adding-a-tool.i18n.yaml
+│   │   │   │   ├── adding-a-tool.md
+│   │   │   │   ├── adding-a-tool.zh.md
+│   │   │   │   ├── adding-a-vendored-package.i18n.yaml
+│   │   │   │   ├── adding-a-vendored-package.md
+│   │   │   │   ├── adding-a-vendored-package.zh.md
+│   │   │   │   ├── adding-an-llm-adapter.i18n.yaml
+│   │   │   │   ├── adding-an-llm-adapter.md
+│   │   │   │   ├── adding-an-llm-adapter.zh.md
+│   │   │   │   ├── extension-cookbook.i18n.yaml
+│   │   │   │   ├── extension-cookbook.md
+│   │   │   │   ├── extension-cookbook.zh.md
+│   │   │   │   ├── maintaining-dsh-code-review.i18n.yaml
+│   │   │   │   ├── maintaining-dsh-code-review.md
+│   │   │   │   ├── maintaining-dsh-code-review.zh.md
+│   │   │   │   ├── responding-to-pr-review-on-a-stack.i18n.yaml
+│   │   │   │   ├── responding-to-pr-review-on-a-stack.md
+│   │   │   │   └── responding-to-pr-review-on-a-stack.zh.md
+│   │   │   ├── cordis-api/
+│   │   │   │   ├── context.i18n.yaml
+│   │   │   │   ├── context.md
+│   │   │   │   ├── context.zh.md
+│   │   │   │   ├── events.i18n.yaml
+│   │   │   │   ├── events.md
+│   │   │   │   ├── events.zh.md
+│   │   │   │   ├── fiber.i18n.yaml
+│   │   │   │   ├── fiber.md
+│   │   │   │   ├── fiber.zh.md
+│   │   │   │   ├── inherited.md
+│   │   │   │   ├── registry.i18n.yaml
+│   │   │   │   ├── registry.md
+│   │   │   │   ├── registry.zh.md
+│   │   │   │   ├── service.i18n.yaml
+│   │   │   │   ├── service.md
+│   │   │   │   └── service.zh.md
+│   │   │   ├── cordis-tutorial/
+│   │   │   │   ├── 01-first-plugin.i18n.yaml
+│   │   │   │   ├── 01-first-plugin.md
+│   │   │   │   ├── 01-first-plugin.zh.md
+│   │   │   │   ├── 02-lifecycle-and-effects.i18n.yaml
+│   │   │   │   ├── 02-lifecycle-and-effects.md
+│   │   │   │   ├── 02-lifecycle-and-effects.zh.md
+│   │   │   │   ├── 03-services.i18n.yaml
+│   │   │   │   ├── 03-services.md
+│   │   │   │   ├── 03-services.zh.md
+│   │   │   │   ├── 04-events.i18n.yaml
+│   │   │   │   ├── 04-events.md
+│   │   │   │   ├── 04-events.zh.md
+│   │   │   │   ├── 05-config.i18n.yaml
+│   │   │   │   ├── 05-config.md
+│   │   │   │   ├── 05-config.zh.md
+│   │   │   │   ├── 06-composition-and-hmr.i18n.yaml
+│   │   │   │   ├── 06-composition-and-hmr.md
+│   │   │   │   ├── 06-composition-and-hmr.zh.md
+│   │   │   │   ├── 07-into-the-harness.i18n.yaml
+│   │   │   │   ├── 07-into-the-harness.md
+│   │   │   │   ├── 07-into-the-harness.zh.md
+│   │   │   │   ├── index.i18n.yaml
+│   │   │   │   ├── index.md
+│   │   │   │   └── index.zh.md
+│   │   │   ├── i18n/
+│   │   │   │   ├── README.i18n.yaml
+│   │   │   │   ├── README.md
+│   │   │   │   ├── README.zh.md
+│   │   │   │   ├── style-samples.md
+│   │   │   │   ├── terminology.md
+│   │   │   │   ├── translation-prompt.md
+│   │   │   │   ├── translation-rules.i18n.yaml
+│   │   │   │   ├── translation-rules.md
+│   │   │   │   └── translation-rules.zh.md
+│   │   │   ├── postmortem/
+│   │   │   │   ├── 0001-acp-default-export-drops-inject.i18n.yaml
+│   │   │   │   ├── 0001-acp-default-export-drops-inject.md
+│   │   │   │   ├── 0001-acp-default-export-drops-inject.zh.md
+│   │   │   │   ├── 0002-js-expression-disabled-filesystem-tools.i18n.yaml
+│   │   │   │   ├── 0002-js-expression-disabled-filesystem-tools.md
+│   │   │   │   ├── 0002-js-expression-disabled-filesystem-tools.zh.md
+│   │   │   │   ├── 0003-web-agent-gui-feedback-loop.i18n.yaml
+│   │   │   │   ├── 0003-web-agent-gui-feedback-loop.md
+│   │   │   │   ├── 0003-web-agent-gui-feedback-loop.zh.md
+│   │   │   │   ├── 0004-landlock-partial-notice-misclassified-child-failures.i18n.yaml
+│   │   │   │   ├── 0004-landlock-partial-notice-misclassified-child-failures.md
+│   │   │   │   ├── 0004-landlock-partial-notice-misclassified-child-failures.zh.md
+│   │   │   │   ├── README.i18n.yaml
+│   │   │   │   ├── README.md
+│   │   │   │   └── README.zh.md
+│   │   │   ├── subsystems/
+│   │   │   │   ├── agent-team.i18n.yaml
+│   │   │   │   ├── agent-team.md
+│   │   │   │   ├── agent-team.zh.md
+│   │   │   │   ├── approval.i18n.yaml
+│   │   │   │   ├── approval.md
+│   │   │   │   ├── approval.zh.md
+│   │   │   │   ├── attachment.i18n.yaml
+│   │   │   │   ├── attachment.md
+│   │   │   │   ├── attachment.zh.md
+│   │   │   │   ├── client-modules.i18n.yaml
+│   │   │   │   ├── client-modules.md
+│   │   │   │   ├── client-modules.zh.md
+│   │   │   │   ├── code-runtime.i18n.yaml
+│   │   │   │   ├── code-runtime.md
+│   │   │   │   ├── code-runtime.zh.md
+│   │   │   │   ├── commands.i18n.yaml
+│   │   │   │   ├── commands.md
+│   │   │   │   ├── commands.zh.md
+│   │   │   │   ├── compaction.i18n.yaml
+│   │   │   │   ├── compaction.md
+│   │   │   │   ├── compaction.zh.md
+│   │   │   │   ├── conversation.i18n.yaml
+│   │   │   │   ├── conversation.md
+│   │   │   │   ├── conversation.zh.md
+│   │   │   │   ├── core.i18n.yaml
+│   │   │   │   ├── core.md
+│   │   │   │   ├── core.zh.md
+│   │   │   │   ├── credentials.i18n.yaml
+│   │   │   │   ├── credentials.md
+│   │   │   │   ├── credentials.zh.md
+│   │   │   │   ├── extensions.i18n.yaml
+│   │   │   │   ├── extensions.md
+│   │   │   │   ├── extensions.zh.md
+│   │   │   │   ├── feedback.i18n.yaml
+│   │   │   │   ├── feedback.md
+│   │   │   │   ├── feedback.zh.md
+│   │   │   │   ├── filesystem.i18n.yaml
+│   │   │   │   ├── filesystem.md
+│   │   │   │   ├── filesystem.zh.md
+│   │   │   │   ├── goal.i18n.yaml
+│   │   │   │   ├── goal.md
+│   │   │   │   ├── goal.zh.md
+│   │   │   │   ├── invariants.i18n.yaml
+│   │   │   │   ├── invariants.md
+│   │   │   │   ├── invariants.zh.md
+│   │   │   │   ├── jobs.i18n.yaml
+│   │   │   │   ├── jobs.md
+│   │   │   │   ├── jobs.zh.md
+│   │   │   │   ├── llm-streaming.i18n.yaml
+│   │   │   │   ├── llm-streaming.md
+│   │   │   │   ├── llm-streaming.zh.md
+│   │   │   │   ├── lsp.i18n.yaml
+│   │   │   │   ├── lsp.md
+│   │   │   │   ├── lsp.zh.md
+│   │   │   │   ├── permission-presets.i18n.yaml
+│   │   │   │   ├── permission-presets.md
+│   │   │   │   ├── permission-presets.zh.md
+│   │   │   │   ├── persistence.i18n.yaml
+│   │   │   │   ├── persistence.md
+│   │   │   │   ├── persistence.zh.md
+│   │   │   │   ├── plan.i18n.yaml
+│   │   │   │   ├── plan.md
+│   │   │   │   ├── plan.zh.md
+│   │   │   │   ├── README.i18n.yaml
+│   │   │   │   ├── README.md
+│   │   │   │   ├── README.zh.md
+│   │   │   │   ├── sandbox.i18n.yaml
+│   │   │   │   ├── sandbox.md
+│   │   │   │   ├── sandbox.zh.md
+│   │   │   │   ├── schedule.i18n.yaml
+│   │   │   │   ├── schedule.md
+│   │   │   │   ├── schedule.zh.md
+│   │   │   │   ├── scope.i18n.yaml
+│   │   │   │   ├── scope.md
+│   │   │   │   ├── scope.zh.md
+│   │   │   │   ├── session-projection.i18n.yaml
+│   │   │   │   ├── session-projection.md
+│   │   │   │   ├── session-projection.zh.md
+│   │   │   │   ├── session-query.i18n.yaml
+│   │   │   │   ├── session-query.md
+│   │   │   │   ├── session-query.zh.md
+│   │   │   │   ├── session-reference.i18n.yaml
+│   │   │   │   ├── session-reference.md
+│   │   │   │   ├── session-reference.zh.md
+│   │   │   │   ├── session-telemetry.i18n.yaml
+│   │   │   │   ├── session-telemetry.md
+│   │   │   │   ├── session-telemetry.zh.md
+│   │   │   │   ├── session-title.i18n.yaml
+│   │   │   │   ├── session-title.md
+│   │   │   │   ├── session-title.zh.md
+│   │   │   │   ├── session.i18n.yaml
+│   │   │   │   ├── session.md
+│   │   │   │   ├── session.zh.md
+│   │   │   │   ├── settings.i18n.yaml
+│   │   │   │   ├── settings.md
+│   │   │   │   ├── settings.zh.md
+│   │   │   │   ├── shell.i18n.yaml
+│   │   │   │   ├── shell.md
+│   │   │   │   ├── shell.zh.md
+│   │   │   │   ├── skills.i18n.yaml
+│   │   │   │   ├── skills.md
+│   │   │   │   ├── skills.zh.md
+│   │   │   │   ├── slots.i18n.yaml
+│   │   │   │   ├── slots.md
+│   │   │   │   ├── slots.zh.md
+│   │   │   │   ├── spill.i18n.yaml
+│   │   │   │   ├── spill.md
+│   │   │   │   ├── spill.zh.md
+│   │   │   │   ├── storage.i18n.yaml
+│   │   │   │   ├── storage.md
+│   │   │   │   ├── storage.zh.md
+│   │   │   │   ├── subagent.i18n.yaml
+│   │   │   │   ├── subagent.md
+│   │   │   │   ├── subagent.zh.md
+│   │   │   │   ├── subprocess.i18n.yaml
+│   │   │   │   ├── subprocess.md
+│   │   │   │   ├── subprocess.zh.md
+│   │   │   │   ├── system-prompt.i18n.yaml
+│   │   │   │   ├── system-prompt.md
+│   │   │   │   ├── system-prompt.zh.md
+│   │   │   │   ├── terminal.i18n.yaml
+│   │   │   │   ├── terminal.md
+│   │   │   │   ├── terminal.zh.md
+│   │   │   │   ├── todo.i18n.yaml
+│   │   │   │   ├── todo.md
+│   │   │   │   ├── todo.zh.md
+│   │   │   │   ├── tools.i18n.yaml
+│   │   │   │   ├── tools.md
+│   │   │   │   ├── tools.zh.md
+│   │   │   │   ├── typert.i18n.yaml
+│   │   │   │   ├── typert.md
+│   │   │   │   ├── typert.zh.md
+│   │   │   │   ├── user-questions.i18n.yaml
+│   │   │   │   ├── user-questions.md
+│   │   │   │   ├── user-questions.zh.md
+│   │   │   │   ├── web-client.i18n.yaml
+│   │   │   │   ├── web-client.md
+│   │   │   │   ├── web-client.zh.md
+│   │   │   │   ├── web-server.i18n.yaml
+│   │   │   │   ├── web-server.md
+│   │   │   │   ├── web-server.zh.md
+│   │   │   │   ├── web.i18n.yaml
+│   │   │   │   ├── web.md
+│   │   │   │   ├── web.zh.md
+│   │   │   │   ├── webhook.i18n.yaml
+│   │   │   │   ├── webhook.md
+│   │   │   │   ├── webhook.zh.md
+│   │   │   │   ├── workflow.i18n.yaml
+│   │   │   │   ├── workflow.md
+│   │   │   │   ├── workflow.zh.md
+│   │   │   │   ├── workspace.i18n.yaml
+│   │   │   │   ├── workspace.md
+│   │   │   │   └── workspace.zh.md
+│   │   │   ├── user/
+│   │   │   │   ├── develop/
+│   │   │   │   │   ├── basic/
+│   │   │   │   │   │   ├── config.i18n.yaml
+│   │   │   │   │   │   ├── config.md
+│   │   │   │   │   │   ├── config.zh.md
+│   │   │   │   │   │   ├── index.i18n.yaml
+│   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   ├── index.zh.md
+│   │   │   │   │   │   ├── publish.i18n.yaml
+│   │   │   │   │   │   ├── publish.md
+│   │   │   │   │   │   ├── publish.zh.md
+│   │   │   │   │   │   ├── tool.i18n.yaml
+│   │   │   │   │   │   ├── tool.md
+│   │   │   │   │   │   └── tool.zh.md
+│   │   │   │   │   ├── framework/
+│   │   │   │   │   │   ├── events.i18n.yaml
+│   │   │   │   │   │   ├── events.md
+│   │   │   │   │   │   ├── events.zh.md
+│   │   │   │   │   │   ├── index.i18n.yaml
+│   │   │   │   │   │   ├── index.md
+│   │   │   │   │   │   ├── index.zh.md
+│   │   │   │   │   │   ├── service.i18n.yaml
+│   │   │   │   │   │   ├── service.md
+│   │   │   │   │   │   └── service.zh.md
+│   │   │   │   │   └── practice/
+│   │   │   │   │       ├── dynamic-cordis.i18n.yaml
+│   │   │   │   │       ├── dynamic-cordis.md
+│   │   │   │   │       ├── dynamic-cordis.zh.md
+│   │   │   │   │       ├── index.i18n.yaml
+│   │   │   │   │       ├── index.md
+│   │   │   │   │       ├── index.zh.md
+│   │   │   │   │       ├── llm-adapter.i18n.yaml
+│   │   │   │   │       ├── llm-adapter.md
+│   │   │   │   │       └── llm-adapter.zh.md
+│   │   │   │   ├── guide/
+│   │   │   │   │   ├── github-review.i18n.yaml
+│   │   │   │   │   ├── github-review.md
+│   │   │   │   │   ├── github-review.zh.md
+│   │   │   │   │   ├── index.i18n.yaml
+│   │   │   │   │   ├── index.md
+│   │   │   │   │   ├── index.zh.md
+│   │   │   │   │   ├── providers-custom-form.png
+│   │   │   │   │   ├── providers-custom-form.zh.png
+│   │   │   │   │   ├── providers-models-page.png
+│   │   │   │   │   ├── providers-models-page.zh.png
+│   │   │   │   │   ├── providers.i18n.yaml
+│   │   │   │   │   ├── providers.md
+│   │   │   │   │   ├── providers.zh.md
+│   │   │   │   │   ├── python-sdk.i18n.yaml
+│   │   │   │   │   ├── python-sdk.md
+│   │   │   │   │   ├── python-sdk.zh.md
+│   │   │   │   │   ├── schedule.i18n.yaml
+│   │   │   │   │   ├── schedule.md
+│   │   │   │   │   └── schedule.zh.md
+│   │   │   │   ├── index.i18n.yaml
+│   │   │   │   ├── index.md
+│   │   │   │   └── index.zh.md
+│   │   │   ├── agent-lifecycle.i18n.yaml
+│   │   │   ├── agent-lifecycle.md
+│   │   │   ├── agent-lifecycle.zh.md
+│   │   │   ├── AGENTS.md
+│   │   │   ├── api-gateway.i18n.yaml
+│   │   │   ├── api-gateway.md
+│   │   │   ├── api-gateway.zh.md
+│   │   │   ├── architecture.i18n.yaml
+│   │   │   ├── architecture.md
+│   │   │   ├── architecture.zh.md
+│   │   │   ├── capability-seams.i18n.yaml
+│   │   │   ├── capability-seams.md
+│   │   │   ├── capability-seams.zh.md
+│   │   │   ├── config-catalog.i18n.yaml
+│   │   │   ├── config-catalog.md
+│   │   │   ├── config-catalog.zh.md
+│   │   │   ├── cordis-primer.i18n.yaml
+│   │   │   ├── cordis-primer.md
+│   │   │   ├── cordis-primer.zh.md
+│   │   │   ├── deepseek-llm-api-wire-extensions.i18n.yaml
+│   │   │   ├── deepseek-llm-api-wire-extensions.md
+│   │   │   ├── deepseek-llm-api-wire-extensions.zh.md
+│   │   │   ├── defensive-patterns.i18n.yaml
+│   │   │   ├── defensive-patterns.md
+│   │   │   ├── defensive-patterns.zh.md
+│   │   │   ├── development.i18n.yaml
+│   │   │   ├── development.md
+│   │   │   ├── development.zh.md
+│   │   │   ├── event-producer-consumer.i18n.yaml
+│   │   │   ├── event-producer-consumer.md
+│   │   │   ├── event-producer-consumer.zh.md
+│   │   │   ├── glossary.i18n.yaml
+│   │   │   ├── glossary.md
+│   │   │   ├── glossary.zh.md
+│   │   │   ├── graph-atlas.i18n.yaml
+│   │   │   ├── graph-atlas.md
+│   │   │   ├── graph-atlas.zh.md
+│   │   │   ├── module-graph.i18n.yaml
+│   │   │   ├── module-graph.md
+│   │   │   ├── module-graph.zh.md
+│   │   │   ├── persistence-catalog.i18n.yaml
+│   │   │   ├── persistence-catalog.md
+│   │   │   ├── persistence-catalog.zh.md
+│   │   │   ├── rescope.i18n.yaml
+│   │   │   ├── rescope.md
+│   │   │   ├── rescope.zh.md
+│   │   │   ├── testing.i18n.yaml
+│   │   │   ├── testing.md
+│   │   │   ├── testing.zh.md
+│   │   │   ├── tool-catalog.i18n.yaml
+│   │   │   ├── tool-catalog.md
+│   │   │   ├── tool-catalog.zh.md
+│   │   │   ├── tool-execution-pipeline.i18n.yaml
+│   │   │   ├── tool-execution-pipeline.md
+│   │   │   ├── tool-execution-pipeline.zh.md
+│   │   │   ├── web-styling.i18n.yaml
+│   │   │   ├── web-styling.md
+│   │   │   └── web-styling.zh.md
 │   │   └── SKILL.md
 │   ├── env-embedded/
 │   │   ├── refs/
@@ -3581,7 +4178,6 @@ D:\Notes
 │   │   │       │   │   │   │       ├── STC_Demo.hex
 │   │   │       │   │   │   │       ├── STC_Demo.lnp
 │   │   │       │   │   │   │       ├── STC_Demo.map
-│   │   │       │   │   │   │       ├── STC_Demo.map.old
 │   │   │       │   │   │   │       ├── STC_Demo.map.view
 │   │   │       │   │   │   │       ├── STC_Demo.objlist
 │   │   │       │   │   │   │       └── unify_builder.log
@@ -4102,8 +4698,6 @@ D:\Notes
 │   │   └── SKILL.md
 │   ├── env-others/
 │   │   └── SKILL.md
-│   ├── env-pi-extension/
-│   │   └── SKILL.md
 │   ├── env-python-project/
 │   │   └── SKILL.md
 │   ├── env-rust/
@@ -4112,7 +4706,30 @@ D:\Notes
 │   │   └── SKILL.md
 │   ├── env-wsl/
 │   │   └── SKILL.md
-│   ├── how-to-customize-pi/
+│   ├── generate-image/
+│   │   ├── .pytest_cache/
+│   │   │   ├── v/
+│   │   │   │   └── cache/
+│   │   │   │       ├── lastfailed
+│   │   │   │       └── nodeids
+│   │   │   ├── .gitignore
+│   │   │   ├── CACHEDIR.TAG
+│   │   │   └── README.md
+│   │   ├── .ruff_cache/
+│   │   │   ├── 0.16.3/
+│   │   │   │   └── 11584673912610043210
+│   │   │   ├── .gitignore
+│   │   │   └── CACHEDIR.TAG
+│   │   ├── scripts/
+│   │   │   ├── .ruff_cache/
+│   │   │   │   ├── 0.15.15/
+│   │   │   │   │   └── 2792048654688716506
+│   │   │   │   ├── .gitignore
+│   │   │   │   └── CACHEDIR.TAG
+│   │   │   ├── __pycache__/
+│   │   │   │   └── openai_image.cpython-314.pyc
+│   │   │   ├── config.toml
+│   │   │   └── openai_image.py
 │   │   └── SKILL.md
 │   ├── humanizer-zh/
 │   │   └── SKILL.md
@@ -4387,6 +5004,18 @@ D:\Notes
 │   │   └── 零信任架构.md
 │   ├── web_dev/
 │   │   └── frontend/
+│   │       ├── react/
+│   │       │   ├── 000：迷迷糊糊看完了。尚需实战磨砺，精简此目录下的笔记.md
+│   │       │   ├── 00搭建现代 React 19 + TS 开发环境.md
+│   │       │   ├── 01React 19 组件思维.md
+│   │       │   ├── 02JSX.md
+│   │       │   ├── 03组件与 Props.md
+│   │       │   ├── 04状态 (State) 与事件驱动.md
+│   │       │   ├── 05条件、列表渲染与 Suspense.md
+│   │       │   ├── 06副作用与 useEffect (与外部系统同步).md
+│   │       │   ├── 07现代数据读取与 `use` Hook.md
+│   │       │   ├── 08现代表单与 Actions (告别繁琐的状态管理).md
+│   │       │   └── 09进阶 Hooks 与性能优化 (直达底层).md
 │   │       ├── Vue/
 │   │       │   ├── -1目录解读.md
 │   │       │   ├── 00总结.md
@@ -4480,6 +5109,5 @@ D:\Notes
 ├── Gemini 网页版  的指令集.md
 ├── obsidian常用regex.md
 ├── 做演示的工作流.md
-├── 反直觉的悖论（没学会）.md
-└── 如何让AI辅助学习、生成理清思路的图文（附网页版GEMINI提示词）.md
+└── 反直觉的悖论（没学会）.md
 ```
