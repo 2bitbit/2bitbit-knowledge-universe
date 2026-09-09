@@ -177,7 +177,7 @@ D:\Notes
 │   ├── 神药汇聚/
 │   │   ├── 扶他林.md
 │   │   ├── 爽身粉.md
-│   │   ├── 脑袋使劲后移+微收下巴.md
+│   │   ├── 肩颈酸痛.md
 │   │   └── 避免睡前，饭时，拉屎时看手机的焚诀.md
 │   ├── asking_exp.md
 │   ├── English_exp.md
@@ -213,6 +213,7 @@ D:\Notes
 │   │   │   ├── -1pnpm.md
 │   │   │   ├── -2开发与运行环境的搭建.md
 │   │   │   ├── -3why dsh.md
+│   │   │   ├── -4过时警告.md
 │   │   │   ├── 00小细节.md
 │   │   │   ├── 01插件入门.md
 │   │   │   ├── 02ctx上下文对象.md
@@ -256,8 +257,7 @@ D:\Notes
 │   │   │   ├── 21读懂reload（关键是jiti缓存与bun运行时缓存的共存）.md
 │   │   │   ├── 22TUI讲解（一）.md
 │   │   │   ├── 23TUI讲解（二）.md
-│   │   │   ├── 24动态工具.md
-│   │   │   └── TODO.md
+│   │   │   └── 24动态工具.md
 │   │   ├── 00agent定义.md
 │   │   ├── agent如何上网，以及给agent的浏览器--全工具实测记录.md
 │   │   ├── MCP上下文注入时机.md
@@ -1619,6 +1619,7 @@ D:\Notes
 │   ├── 十六进制大王.md
 │   ├── 华莱士树.md
 │   ├── 嵌入式硬件入门分类指南（MCU、MPU、SBC、FPGA）.md
+│   ├── 极简 TLV（Type-Length-Value）布局（帧骨架）.md
 │   └── 核心板和底板.md
 ├── Ops/
 │   ├── CICD/
@@ -1731,6 +1732,9 @@ D:\Notes
 │   │   │   │   ├── adding-a-package.i18n.yaml
 │   │   │   │   ├── adding-a-package.md
 │   │   │   │   ├── adding-a-package.zh.md
+│   │   │   │   ├── adding-a-remote-api.i18n.yaml
+│   │   │   │   ├── adding-a-remote-api.md
+│   │   │   │   ├── adding-a-remote-api.zh.md
 │   │   │   │   ├── adding-a-settings-card.i18n.yaml
 │   │   │   │   ├── adding-a-settings-card.md
 │   │   │   │   ├── adding-a-settings-card.zh.md
@@ -2016,6 +2020,9 @@ D:\Notes
 │   │   │   │   │   ├── index.i18n.yaml
 │   │   │   │   │   ├── index.md
 │   │   │   │   │   ├── index.zh.md
+│   │   │   │   │   ├── network-proxy.i18n.yaml
+│   │   │   │   │   ├── network-proxy.md
+│   │   │   │   │   ├── network-proxy.zh.md
 │   │   │   │   │   ├── providers-custom-form.png
 │   │   │   │   │   ├── providers-custom-form.zh.png
 │   │   │   │   │   ├── providers-models-page.png
@@ -2096,7 +2103,8 @@ D:\Notes
 │   │   │   ├── 51-mcu-cli-toolchain/
 │   │   │   │   ├── scripts/
 │   │   │   │   │   ├── build_and_flash.py
-│   │   │   │   │   └── config.toml
+│   │   │   │   │   ├── config.toml
+│   │   │   │   │   └── sdcc_build_and_flash.py
 │   │   │   │   └── 51-mcu-cli-toolchain.md
 │   │   │   ├── FPGA/
 │   │   │   │   ├── 小梅哥-芯片10CL025YU256I7G/
@@ -4706,119 +4714,63 @@ D:\Notes
 │   │   └── SKILL.md
 │   ├── env-wsl/
 │   │   └── SKILL.md
-│   ├── generate-image/
-│   │   ├── .pytest_cache/
-│   │   │   ├── v/
-│   │   │   │   └── cache/
-│   │   │   │       ├── lastfailed
-│   │   │   │       └── nodeids
-│   │   │   ├── .gitignore
-│   │   │   ├── CACHEDIR.TAG
-│   │   │   └── README.md
-│   │   ├── .ruff_cache/
-│   │   │   ├── 0.16.3/
-│   │   │   │   └── 11584673912610043210
-│   │   │   ├── .gitignore
-│   │   │   └── CACHEDIR.TAG
-│   │   ├── scripts/
-│   │   │   ├── .ruff_cache/
-│   │   │   │   ├── 0.15.15/
-│   │   │   │   │   └── 2792048654688716506
-│   │   │   │   ├── .gitignore
-│   │   │   │   └── CACHEDIR.TAG
-│   │   │   ├── __pycache__/
-│   │   │   │   └── openai_image.cpython-314.pyc
-│   │   │   ├── config.toml
-│   │   │   └── openai_image.py
-│   │   └── SKILL.md
 │   ├── humanizer-zh/
 │   │   └── SKILL.md
 │   ├── impeccable/
+│   │   ├── reference/
+│   │   │   ├── degraded/
+│   │   │   │   ├── asset-producer.md
+│   │   │   │   ├── documenter.md
+│   │   │   │   ├── finish-reviewer.md
+│   │   │   │   └── manual-edit-applier.md
+│   │   │   ├── adapt.md
+│   │   │   ├── adapt.native.md
+│   │   │   ├── android.md
+│   │   │   ├── animate.md
+│   │   │   ├── audit.md
+│   │   │   ├── audit.native.md
+│   │   │   ├── bolder.md
+│   │   │   ├── clarify.md
+│   │   │   ├── colorize.md
+│   │   │   ├── craft-floor.md
+│   │   │   ├── craft.md
+│   │   │   ├── critique.md
+│   │   │   ├── delight.md
+│   │   │   ├── distill.md
+│   │   │   ├── doctor.md
+│   │   │   ├── document.md
+│   │   │   ├── extract.md
+│   │   │   ├── harden.md
+│   │   │   ├── hooks.md
+│   │   │   ├── init.md
+│   │   │   ├── ios.md
+│   │   │   ├── layout.md
+│   │   │   ├── live-setup.md
+│   │   │   ├── live.md
+│   │   │   ├── new-work.md
+│   │   │   ├── onboard.md
+│   │   │   ├── operate.md
+│   │   │   ├── optimize.md
+│   │   │   ├── overdrive.md
+│   │   │   ├── polish.md
+│   │   │   ├── quieter.md
+│   │   │   ├── routing.md
+│   │   │   ├── shape.md
+│   │   │   ├── typeset.md
+│   │   │   └── visualize.md
 │   │   ├── scripts/
-│   │   │   ├── detector/
-│   │   │   │   ├── browser/
-│   │   │   │   │   └── injected/
-│   │   │   │   │       └── index.mjs
-│   │   │   │   ├── cli/
-│   │   │   │   │   └── main.mjs
-│   │   │   │   ├── engines/
-│   │   │   │   │   ├── browser/
-│   │   │   │   │   │   └── detect-url.mjs
-│   │   │   │   │   ├── regex/
-│   │   │   │   │   │   └── detect-text.mjs
-│   │   │   │   │   ├── static-html/
-│   │   │   │   │   │   ├── css-cascade.mjs
-│   │   │   │   │   │   └── detect-html.mjs
-│   │   │   │   │   └── visual/
-│   │   │   │   │       └── screenshot-contrast.mjs
-│   │   │   │   ├── node/
-│   │   │   │   │   └── file-system.mjs
-│   │   │   │   ├── profile/
-│   │   │   │   │   └── profiler.mjs
-│   │   │   │   ├── registry/
-│   │   │   │   │   └── antipatterns.mjs
-│   │   │   │   ├── rules/
-│   │   │   │   │   └── checks.mjs
-│   │   │   │   ├── shared/
-│   │   │   │   │   ├── color.mjs
-│   │   │   │   │   ├── constants.mjs
-│   │   │   │   │   ├── fonts.mjs
-│   │   │   │   │   ├── inline-ignores.mjs
-│   │   │   │   │   └── page.mjs
-│   │   │   │   ├── design-system.mjs
-│   │   │   │   ├── detect-antipatterns-browser.js
-│   │   │   │   ├── detect-antipatterns.mjs
-│   │   │   │   └── findings.mjs
-│   │   │   ├── lib/
-│   │   │   │   ├── design-parser.mjs
-│   │   │   │   ├── impeccable-config.mjs
-│   │   │   │   ├── impeccable-paths.mjs
-│   │   │   │   ├── is-generated.mjs
-│   │   │   │   └── target-args.mjs
-│   │   │   ├── live/
-│   │   │   │   ├── browser-script-parts.mjs
-│   │   │   │   ├── completion.mjs
-│   │   │   │   ├── event-validation.mjs
-│   │   │   │   ├── insert-ui.mjs
-│   │   │   │   ├── manual-apply.mjs
-│   │   │   │   ├── manual-edit-routes.mjs
-│   │   │   │   ├── manual-edits-buffer.mjs
-│   │   │   │   ├── session-store.mjs
-│   │   │   │   ├── svelte-component.mjs
-│   │   │   │   ├── sveltekit-adapter.mjs
-│   │   │   │   ├── ui-core.mjs
-│   │   │   │   └── vocabulary.mjs
+│   │   │   ├── data/
+│   │   │   │   ├── font-index-failures.json
+│   │   │   │   └── font-index.json
 │   │   │   ├── command-metadata.json
-│   │   │   ├── context-signals.mjs
-│   │   │   ├── context.mjs
-│   │   │   ├── critique-storage.mjs
-│   │   │   ├── detect-csp.mjs
-│   │   │   ├── detect.mjs
-│   │   │   ├── hook-admin.mjs
-│   │   │   ├── hook-before-edit.mjs
-│   │   │   ├── hook-lib.mjs
-│   │   │   ├── hook.mjs
-│   │   │   ├── live-accept.mjs
+│   │   │   ├── impeccable
+│   │   │   ├── impeccable.cmd
 │   │   │   ├── live-browser-dom.js
+│   │   │   ├── live-browser-ignores.js
 │   │   │   ├── live-browser-session.js
 │   │   │   ├── live-browser.js
-│   │   │   ├── live-commit-manual-edits.mjs
-│   │   │   ├── live-complete.mjs
-│   │   │   ├── live-copy-edit-agent.mjs
-│   │   │   ├── live-discard-manual-edits.mjs
-│   │   │   ├── live-inject.mjs
-│   │   │   ├── live-insert.mjs
-│   │   │   ├── live-manual-edit-evidence.mjs
-│   │   │   ├── live-poll.mjs
-│   │   │   ├── live-resume.mjs
-│   │   │   ├── live-server.mjs
-│   │   │   ├── live-status.mjs
-│   │   │   ├── live-target.mjs
-│   │   │   ├── live-wrap.mjs
-│   │   │   ├── live.mjs
 │   │   │   ├── modern-screenshot.umd.js
-│   │   │   ├── palette.mjs
-│   │   │   └── pin.mjs
+│   │   │   └── VERSION
 │   │   └── SKILL.md
 │   ├── snapmail-service/
 │   │   ├── scripts/
@@ -5108,6 +5060,7 @@ D:\Notes
 │   └── 解决某些应用登陆后不会跳转的问题（如antigravity）.md
 ├── Gemini 网页版  的指令集.md
 ├── obsidian常用regex.md
+├── TODO.md
 ├── 做演示的工作流.md
 └── 反直觉的悖论（没学会）.md
 ```
