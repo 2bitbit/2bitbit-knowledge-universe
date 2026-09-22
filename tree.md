@@ -2,163 +2,40 @@
 D:\Notes
 ├── .agents/
 │   └── skills/
-│       ├── copilot-fetch-x/
-│       │   ├── fetch-x.cmd
-│       │   ├── fetch-x.ps1
-│       │   ├── fetch-x.sh
-│       │   └── SKILL.md
-│       ├── copilot-read-pdf/
-│       │   ├── read-pdf.cmd
-│       │   ├── read-pdf.ps1
-│       │   ├── read-pdf.sh
-│       │   └── SKILL.md
-│       ├── copilot-web-fetch/
-│       │   ├── SKILL.md
-│       │   ├── web-fetch.cmd
-│       │   ├── web-fetch.ps1
-│       │   └── web-fetch.sh
-│       ├── copilot-web-search/
-│       │   ├── SKILL.md
-│       │   ├── web-search.cmd
-│       │   ├── web-search.ps1
-│       │   └── web-search.sh
-│       ├── copilot-youtube-transcript/
-│       │   ├── SKILL.md
-│       │   ├── youtube-transcript.cmd
-│       │   ├── youtube-transcript.ps1
-│       │   └── youtube-transcript.sh
-│       ├── json-canvas/
-│       │   ├── references/
-│       │   │   └── EXAMPLES.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-bases/
-│       │   ├── references/
-│       │   │   ├── EXAMPLES.md
-│       │   │   └── FUNCTIONS_REFERENCE.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-cli/
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-markdown/
-│       │   ├── references/
-│       │   │   ├── CALLOUTS.md
-│       │   │   ├── EMBEDS.md
-│       │   │   └── PROPERTIES.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       └── symposium-publish/
-│           ├── SKILL.md
-│           ├── symposium-publish.cmd
-│           ├── symposium-publish.ps1
-│           └── symposium-publish.sh
+│       ├── copilot-fetch-x
+│       ├── copilot-read-pdf
+│       ├── copilot-web-fetch
+│       ├── copilot-web-search
+│       ├── copilot-youtube-transcript
+│       ├── json-canvas
+│       ├── obsidian-bases
+│       ├── obsidian-cli
+│       ├── obsidian-markdown
+│       └── symposium-publish
 ├── .claude/
 │   └── skills/
-│       ├── copilot-fetch-x/
-│       │   ├── fetch-x.cmd
-│       │   ├── fetch-x.ps1
-│       │   ├── fetch-x.sh
-│       │   └── SKILL.md
-│       ├── copilot-read-pdf/
-│       │   ├── read-pdf.cmd
-│       │   ├── read-pdf.ps1
-│       │   ├── read-pdf.sh
-│       │   └── SKILL.md
-│       ├── copilot-web-fetch/
-│       │   ├── SKILL.md
-│       │   ├── web-fetch.cmd
-│       │   ├── web-fetch.ps1
-│       │   └── web-fetch.sh
-│       ├── copilot-web-search/
-│       │   ├── SKILL.md
-│       │   ├── web-search.cmd
-│       │   ├── web-search.ps1
-│       │   └── web-search.sh
-│       ├── copilot-youtube-transcript/
-│       │   ├── SKILL.md
-│       │   ├── youtube-transcript.cmd
-│       │   ├── youtube-transcript.ps1
-│       │   └── youtube-transcript.sh
-│       ├── json-canvas/
-│       │   ├── references/
-│       │   │   └── EXAMPLES.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-bases/
-│       │   ├── references/
-│       │   │   ├── EXAMPLES.md
-│       │   │   └── FUNCTIONS_REFERENCE.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-cli/
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-markdown/
-│       │   ├── references/
-│       │   │   ├── CALLOUTS.md
-│       │   │   ├── EMBEDS.md
-│       │   │   └── PROPERTIES.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       └── symposium-publish/
-│           ├── SKILL.md
-│           ├── symposium-publish.cmd
-│           ├── symposium-publish.ps1
-│           └── symposium-publish.sh
+│       ├── copilot-fetch-x
+│       ├── copilot-read-pdf
+│       ├── copilot-web-fetch
+│       ├── copilot-web-search
+│       ├── copilot-youtube-transcript
+│       ├── json-canvas
+│       ├── obsidian-bases
+│       ├── obsidian-cli
+│       ├── obsidian-markdown
+│       └── symposium-publish
 ├── .opencode/
 │   └── skills/
-│       ├── copilot-fetch-x/
-│       │   ├── fetch-x.cmd
-│       │   ├── fetch-x.ps1
-│       │   ├── fetch-x.sh
-│       │   └── SKILL.md
-│       ├── copilot-read-pdf/
-│       │   ├── read-pdf.cmd
-│       │   ├── read-pdf.ps1
-│       │   ├── read-pdf.sh
-│       │   └── SKILL.md
-│       ├── copilot-web-fetch/
-│       │   ├── SKILL.md
-│       │   ├── web-fetch.cmd
-│       │   ├── web-fetch.ps1
-│       │   └── web-fetch.sh
-│       ├── copilot-web-search/
-│       │   ├── SKILL.md
-│       │   ├── web-search.cmd
-│       │   ├── web-search.ps1
-│       │   └── web-search.sh
-│       ├── copilot-youtube-transcript/
-│       │   ├── SKILL.md
-│       │   ├── youtube-transcript.cmd
-│       │   ├── youtube-transcript.ps1
-│       │   └── youtube-transcript.sh
-│       ├── json-canvas/
-│       │   ├── references/
-│       │   │   └── EXAMPLES.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-bases/
-│       │   ├── references/
-│       │   │   ├── EXAMPLES.md
-│       │   │   └── FUNCTIONS_REFERENCE.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-cli/
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-markdown/
-│       │   ├── references/
-│       │   │   ├── CALLOUTS.md
-│       │   │   ├── EMBEDS.md
-│       │   │   └── PROPERTIES.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       └── symposium-publish/
-│           ├── SKILL.md
-│           ├── symposium-publish.cmd
-│           ├── symposium-publish.ps1
-│           └── symposium-publish.sh
+│       ├── copilot-fetch-x
+│       ├── copilot-read-pdf
+│       ├── copilot-web-fetch
+│       ├── copilot-web-search
+│       ├── copilot-youtube-transcript
+│       ├── json-canvas
+│       ├── obsidian-bases
+│       ├── obsidian-cli
+│       ├── obsidian-markdown
+│       └── symposium-publish
 ├── .vscode/
 │   └── settings.json
 ├── 00exps/
@@ -230,6 +107,8 @@ D:\Notes
 │   │   │   ├── 12seam、capability（未读）.md
 │   │   │   ├── 13组合包 bundle 与 profile：两个 manifest.md
 │   │   │   ├── 14安装插件；配置加载顺序.md
+│   │   │   ├── 15数据持久化的官方方案.md
+│   │   │   ├── 16dsh中的命令行工具的stdin、stdout、stderr设计.md
 │   │   │   └── 很多知识过时了，需要让dsh自己给你更新过时内容.md
 │   │   ├── pi/
 │   │   │   ├── -1 pi --help的简化版+汉化版（截至版本 v0.80.3）.md
@@ -264,8 +143,8 @@ D:\Notes
 │   │   ├── MCP上下文注入时机.md
 │   │   ├── MCP讲解与实战.md
 │   │   ├── MCP配置字段.md
-│   │   ├── SKILL (+scripts或cli) ＞ MCP.md
-│   │   └── 上下文管理心得.md
+│   │   ├── 上下文管理心得.md
+│   │   └── 哲学：SKILL(+scripts)为骨架, 把 CLI 视作其内部声明的外部依赖, 忘了 MCP.md
 │   ├── alignment/
 │   │   ├── 综述/
 │   │   │   ├── 01引言.md
@@ -533,8 +412,12 @@ D:\Notes
 │   │   ├── PPO.md
 │   │   └── 策略梯度PG.md
 │   ├── 昇腾/
-│   │   ├── Ascend C算子开发/
-│   │   └── 星辰杯.md
+│   │   └── Ascend C算子开发/
+│   │       ├── 01异构系统与编程模型.md
+│   │       ├── 02SIMD.md
+│   │       ├── 03SIMT.md
+│   │       ├── 03一份可运行代码串讲SIMD.md
+│   │       └── 04一份可运行代码串讲SIMT.md
 │   ├── 线性代数应用的精讲/
 │   │   ├── 01协方差矩阵、投影方差与信息量.md
 │   │   ├── 02特征向量：稳定与独立之美.md
@@ -1182,105 +1065,10 @@ D:\Notes
 │   ├── Markdown.md
 │   └── 正则表达式RegEx.md
 ├── CLI/
-│   ├── aichat.md
 │   ├── fzf.md
 │   ├── 命令行工具文档写法（命令签名语法解读）.md
 │   ├── 命令行，终端.md
 │   └── 常见的包装器.md
-├── compilers（待整理）/
-│   ├── 链接/
-│   │   └── 动态链接原理.md
-│   ├── 00待整理.md
-│   ├── 01词法分析 (Lexical Analysis).md
-│   ├── 02语法分析 (Syntax Analysis).md
-│   ├── 03语义分析 (Semantic Analysis).md
-│   ├── 04中间代码生成 (Intermediate Code Generation).md
-│   ├── 05代码优化 (Code Optimization).md
-│   ├── 06目标代码生成 (Code Generation).md
-│   ├── 07自举 (Bootstrapping).md
-│   ├── 08AI写的编译器示例.md
-│   └── 09Wrapper, Compiler Driver, Build Backend.md
-├── copilot/
-│   ├── copilot-custom-prompts/
-│   │   ├── Emojify.md
-│   │   ├── Explain like I am 5.md
-│   │   ├── Fix grammar and spelling.md
-│   │   ├── Generate glossary.md
-│   │   ├── Generate table of contents.md
-│   │   ├── Make longer.md
-│   │   ├── Make shorter.md
-│   │   ├── Remove URLs.md
-│   │   ├── Rewrite as tweet thread.md
-│   │   ├── Rewrite as tweet.md
-│   │   ├── Simplify.md
-│   │   ├── Summarize.md
-│   │   └── Translate to Chinese.md
-│   └── skills/
-│       ├── copilot-fetch-x/
-│       │   ├── fetch-x.cmd
-│       │   ├── fetch-x.ps1
-│       │   ├── fetch-x.sh
-│       │   └── SKILL.md
-│       ├── copilot-read-pdf/
-│       │   ├── read-pdf.cmd
-│       │   ├── read-pdf.ps1
-│       │   ├── read-pdf.sh
-│       │   └── SKILL.md
-│       ├── copilot-web-fetch/
-│       │   ├── SKILL.md
-│       │   ├── web-fetch.cmd
-│       │   ├── web-fetch.ps1
-│       │   └── web-fetch.sh
-│       ├── copilot-web-search/
-│       │   ├── SKILL.md
-│       │   ├── web-search.cmd
-│       │   ├── web-search.ps1
-│       │   └── web-search.sh
-│       ├── copilot-youtube-transcript/
-│       │   ├── SKILL.md
-│       │   ├── youtube-transcript.cmd
-│       │   ├── youtube-transcript.ps1
-│       │   └── youtube-transcript.sh
-│       ├── json-canvas/
-│       │   ├── references/
-│       │   │   └── EXAMPLES.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-bases/
-│       │   ├── references/
-│       │   │   ├── EXAMPLES.md
-│       │   │   └── FUNCTIONS_REFERENCE.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-cli/
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       ├── obsidian-markdown/
-│       │   ├── references/
-│       │   │   ├── CALLOUTS.md
-│       │   │   ├── EMBEDS.md
-│       │   │   └── PROPERTIES.md
-│       │   ├── LICENSE
-│       │   └── SKILL.md
-│       └── symposium-publish/
-│           ├── SKILL.md
-│           ├── symposium-publish.cmd
-│           ├── symposium-publish.ps1
-│           └── symposium-publish.sh
-├── copilot-custom-prompts/
-│   ├── Emojify.md
-│   ├── Explain like I am 5.md
-│   ├── Fix grammar and spelling.md
-│   ├── Generate glossary.md
-│   ├── Generate table of contents.md
-│   ├── Make longer.md
-│   ├── Make shorter.md
-│   ├── Remove URLs.md
-│   ├── Rewrite as tweet thread.md
-│   ├── Rewrite as tweet.md
-│   ├── Simplify.md
-│   ├── Summarize.md
-│   └── Translate to Chinese.md
 ├── Cybersecurity/
 │   ├── Binary Patching/
 │   │   ├── 01实战：共享库注入.md
@@ -1955,6 +1743,12 @@ D:\Notes
 │       ├── 06计算机网络.md
 │       ├── 07数据库与大数据.md
 │       └── 08机器学习.md
+├── 编译原理/
+│   ├── 链接/
+│   │   └── 动态链接原理.md
+│   ├── 00待整理.md
+│   ├── 01.md
+│   └── 02形式语言与自动机.md
 ├── 网络编程/
 │   └── 流：内存复用.md
 ├── 自动化/
@@ -2005,7 +1799,7 @@ D:\Notes
 │   └── 解决某些应用登陆后不会跳转的问题（如antigravity）.md
 ├── Gemini 网页版  的指令集.md
 ├── obsidian常用regex.md
-├── TODO.md
 ├── 做演示的工作流.md
-└── 反直觉的悖论（没学会）.md
+├── 反直觉的悖论（没学会）.md
+└── ！ ！TODO！ ！.md
 ```
