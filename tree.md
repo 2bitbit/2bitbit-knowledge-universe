@@ -1,41 +1,5 @@
 ```text
 D:\Notes
-├── .agents/
-│   └── skills/
-│       ├── copilot-fetch-x
-│       ├── copilot-read-pdf
-│       ├── copilot-web-fetch
-│       ├── copilot-web-search
-│       ├── copilot-youtube-transcript
-│       ├── json-canvas
-│       ├── obsidian-bases
-│       ├── obsidian-cli
-│       ├── obsidian-markdown
-│       └── symposium-publish
-├── .claude/
-│   └── skills/
-│       ├── copilot-fetch-x
-│       ├── copilot-read-pdf
-│       ├── copilot-web-fetch
-│       ├── copilot-web-search
-│       ├── copilot-youtube-transcript
-│       ├── json-canvas
-│       ├── obsidian-bases
-│       ├── obsidian-cli
-│       ├── obsidian-markdown
-│       └── symposium-publish
-├── .opencode/
-│   └── skills/
-│       ├── copilot-fetch-x
-│       ├── copilot-read-pdf
-│       ├── copilot-web-fetch
-│       ├── copilot-web-search
-│       ├── copilot-youtube-transcript
-│       ├── json-canvas
-│       ├── obsidian-bases
-│       ├── obsidian-cli
-│       ├── obsidian-markdown
-│       └── symposium-publish
 ├── .vscode/
 │   └── settings.json
 ├── 00exps/
