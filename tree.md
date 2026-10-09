@@ -72,8 +72,7 @@ D:\Notes
 │   │   │   ├── 13组合包 bundle 与 profile：两个 manifest.md
 │   │   │   ├── 14安装插件；配置加载顺序.md
 │   │   │   ├── 15数据持久化的官方方案.md
-│   │   │   ├── 16dsh中的命令行工具的stdin、stdout、stderr设计.md
-│   │   │   └── 很多知识过时了，需要让dsh自己给你更新过时内容.md
+│   │   │   └── 16dsh中的命令行工具的stdin、stdout、stderr设计.md
 │   │   ├── pi/
 │   │   │   ├── -1 pi --help的简化版+汉化版（截至版本 v0.80.3）.md
 │   │   │   ├── -2 VSCODE+TUI，而非单独的TUI或桌面应用.md
@@ -108,7 +107,7 @@ D:\Notes
 │   │   ├── MCP讲解与实战.md
 │   │   ├── MCP配置字段.md
 │   │   ├── 上下文管理心得.md
-│   │   └── 哲学：SKILL(+scripts)为骨架, 把 CLI 视作其内部声明的外部依赖, 忘了 MCP.md
+│   │   └── 插件总领全局, SKILL(+scripts)为骨架, CLI视作其内部声明的外部依赖, MCP别用.md
 │   ├── alignment/
 │   │   ├── 综述/
 │   │   │   ├── 01引言.md
@@ -1225,12 +1224,6 @@ D:\Notes
 │       ├── tasks.json.md
 │       ├── Vscode相关小知识汇总.md
 │       └── 文档注释.md
-├── docs/
-│   └── superpowers/
-│       ├── plans/
-│       │   └── 2026-07-08-alt-jkli-cursor-mover.md
-│       └── specs/
-│           └── 2026-07-08-alt-jkli-cursor-mover-design.md
 ├── hardware/
 │   ├── cybernetics/
 │   │   ├── PID.md
@@ -1457,11 +1450,14 @@ D:\Notes
 │   │   ├── 服务器参数查询.md
 │   │   ├── 用户：组的美学--UID、GID.md
 │   │   └── 符号链接.md
-│   └── Windows/
-│       ├── powershell.md
-│       ├── windows.md
-│       ├── wsl.md
-│       └── 驱动安装教程.md
+│   ├── Windows/
+│   │   ├── powershell.md
+│   │   ├── windows.md
+│   │   ├── wsl.md
+│   │   └── 驱动安装教程.md
+│   └── 南大蒋炎岩2026春/
+│       ├── 01应用视角的操作系统.md
+│       └── 02硬件视角的操作系统.md
 ├── reverse-engineering/
 │   ├── -1ida一本通.md
 │   ├── -2软件选型.md
@@ -1711,8 +1707,7 @@ D:\Notes
 │   ├── 链接/
 │   │   └── 动态链接原理.md
 │   ├── 00待整理.md
-│   ├── 01.md
-│   └── 02形式语言与自动机.md
+│   └── 01词法分析.md
 ├── 网络编程/
 │   └── 流：内存复用.md
 ├── 自动化/
@@ -1753,8 +1748,7 @@ D:\Notes
 │   │   ├── 班主任箴言.md
 │   │   ├── 班会.md
 │   │   ├── 留学宣讲会笔记.md
-│   │   ├── 选课 Course-Choosing.md
-│   │   └── 预备选课.md
+│   │   └── 选课 Course-Choosing.md
 │   ├── antigravity迁移指南.md
 │   ├── cheat engine.md
 │   ├── typst.md
