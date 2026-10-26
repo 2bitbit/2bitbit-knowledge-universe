@@ -107,7 +107,7 @@ D:\Notes
 │   │   ├── MCP讲解与实战.md
 │   │   ├── MCP配置字段.md
 │   │   ├── 上下文管理心得.md
-│   │   └── 插件总领全局，SKILL(+scripts)为骨架，要灵活用 CLI 要解耦用 MCP(tool).md
+│   │   └── 插件总领全局,SKILL(+scripts)为骨架,要灵活用 CLI,视觉需着重突出才用 MCP(tool).md
 │   ├── alignment/
 │   │   ├── 综述/
 │   │   │   ├── 01引言.md
