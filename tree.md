@@ -1459,6 +1459,12 @@ D:\Notes
 │   └── 南大蒋炎岩2026春/
 │       ├── 01应用视角的操作系统.md
 │       └── 02硬件视角的操作系统.md
+├── Plugin data/
+│   └── obsidian-custom-attachment-location/
+│       └── original-attachment-names-v1/
+│           └── devices/
+│               └── b6772319-3c7c-4e4d-af2a-7ae148930605/
+│                   └── have.md
 ├── reverse-engineering/
 │   ├── -1ida一本通.md
 │   ├── -2软件选型.md
