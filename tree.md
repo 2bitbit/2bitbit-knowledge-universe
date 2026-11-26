@@ -405,6 +405,7 @@ D:\Notes
 │   │   ├── 06.md
 │   │   ├── 07.md
 │   │   └── Gossip协议.md
+│   ├── AI降临！AI继任！AI末日！有效加速！生物boot！矩阵空间！.md
 │   ├── AutoDL云显卡指南.md
 │   ├── ChatML.md
 │   ├── 如何让大模型越狱（亲测有效）.md
@@ -1460,11 +1461,47 @@ D:\Notes
 │       ├── 01应用视角的操作系统.md
 │       └── 02硬件视角的操作系统.md
 ├── Plugin data/
-│   └── obsidian-custom-attachment-location/
-│       └── original-attachment-names-v1/
-│           └── devices/
-│               └── b6772319-3c7c-4e4d-af2a-7ae148930605/
-│                   └── have.md
+│   ├── obsidian-custom-attachment-location/
+│   │   └── original-attachment-names-v1/
+│   │       └── devices/
+│   │           └── b6772319-3c7c-4e4d-af2a-7ae148930605/
+│   │               ├── have.md
+│   │               ├── log-1.md
+│   │               ├── log-12.md
+│   │               ├── log-13.md
+│   │               ├── log-14.md
+│   │               ├── log-15.md
+│   │               ├── log-16.md
+│   │               ├── log-18.md
+│   │               ├── log-19.md
+│   │               ├── log-20.md
+│   │               ├── log-21.md
+│   │               ├── log-22.md
+│   │               ├── log-23.md
+│   │               ├── log-25.md
+│   │               ├── log-26.md
+│   │               ├── log-28.md
+│   │               ├── log-29.md
+│   │               ├── log-3.md
+│   │               ├── log-30.md
+│   │               ├── log-31.md
+│   │               ├── log-32.md
+│   │               ├── log-33.md
+│   │               ├── log-34.md
+│   │               ├── log-36.md
+│   │               ├── log-37.md
+│   │               ├── log-38.md
+│   │               ├── log-39.md
+│   │               ├── log-4.md
+│   │               ├── log-40.md
+│   │               ├── log-41.md
+│   │               ├── log-42.md
+│   │               ├── log-5.md
+│   │               ├── log-6.md
+│   │               ├── log-7.md
+│   │               ├── log-8.md
+│   │               └── log-9.md
+│   └── README.md
 ├── reverse-engineering/
 │   ├── -1ida一本通.md
 │   ├── -2软件选型.md
@@ -1609,8 +1646,6 @@ D:\Notes
 │   ├── 编译流程.md
 │   ├── 调用栈.md
 │   └── 轻松理解异步.md
-├── User-Plugins/
-│   └── 自动折叠所有目录并高亮当前文件.js
 ├── web/
 │   ├── 00手搓服务器实战/
 │   │   ├── 01本地开发.md
